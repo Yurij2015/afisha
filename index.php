@@ -4,7 +4,7 @@ echo "online service";
 require_once "DbConnect.php";
 require_once "Category.php";
 
-$db = new DbConnect("localhost", "root", "zazu", "");
+$db = new DbConnect("localhost", "afisha", "afisha", "3004917779");
 $db->connect();
 
 
