@@ -13,7 +13,7 @@ class Artist
     }
 
     public function name() {
-        return "<h4>$this->name</h4>" . "<br>";
+        return "<h4>$this->name</h4>";
     }
 
     public function description() {
