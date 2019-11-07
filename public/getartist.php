@@ -7,8 +7,8 @@ $db = new DbConnect($host, $user, $db, $pass);
 $artists = $db->connect()->query("SELECT * FROM artists");
 if ($artists) {
     foreach ($artists as $row) {
-        $style = new Artist($row['name'], $row['description']);
-        echo $style->name();
-        echo $style->description();
+        $artist = new Artist($row['name'], $row['description']);
+        echo $artist->name();
+        echo $artist->description();
     }
 }

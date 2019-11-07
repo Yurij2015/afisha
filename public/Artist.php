@@ -8,12 +8,12 @@ class Artist
 
     function __construct($name, $description)
     {
-        $this->name = htmlspecialchars($name);
-        $this->description = htmlspecialchars($description);
+        $this->name = trim(htmlspecialchars($name));
+        $this->description = trim(htmlspecialchars($description));
     }
 
     public function name() {
-        return "<h4>$this->name</h4>";
+        return "<h6>$this->name</h6>";
     }
 
     public function description() {
