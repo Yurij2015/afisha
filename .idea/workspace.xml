@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/uploads/Bogod-Svetlana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/Boyko-Olga.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/Karasevich-Sofya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/uploads/Konchits-Anzhelika.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/Artist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/addartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/addartist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/artists.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/artists.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/getartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/getartist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/IMG-20191028-WA0014.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Screenshot_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/n5yDwuQVrUQ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Безымянный.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Приложение_Начало.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Проектирование базы данных.jpg" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
