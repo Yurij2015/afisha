@@ -10,7 +10,7 @@ class Artist
     function __construct($name, $description, $linkphoto)
     {
         $this->name = trim(htmlspecialchars($name));
-        $this->description = trim(htmlspecialchars($description));
+        $this->description = trim(htmlspecialchars($description), " ");
         $this->linkphoto = $linkphoto;
     }
 

@@ -9,7 +9,7 @@ require_once "header.php";
         <hr>
         <div class="row">
             <div class="col-md-8">
-                <div id="artist" >
+                <div id="artist">
                     <?php
                     //            require_once "getartist.php";
                     ?>
@@ -32,6 +32,12 @@ require_once "header.php";
                     <button type="button" class="btn btn-success" onmousedown="addArtist()" onclick="showArtist() ">
                         Сохранить
                     </button>
+                    <button type="reset" class="btn btn-success">
+                        Очистить
+                    </button>
+                    <span class="btn btn-success" onclick="showArtist()">
+                        Обновить
+                    </span>
                 </form>
             </div>
         </div>

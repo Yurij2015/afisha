@@ -5,7 +5,7 @@ require_once "../DbConnect.php";
 require_once "../dbsettings.php";
 //require_once "Artist.php";
 $name = trim(htmlspecialchars($_POST['name']));
-$description = trim(htmlspecialchars($_POST['description']));
+$description = trim(htmlspecialchars($_POST['description']), " ");
 
 if (!empty($name) && !empty($description)) {
     try {
@@ -62,12 +62,4 @@ if (!empty($name) && !empty($description)) {
 } else {
     echo 'Было пусто. ';
 }
-
-//$target_dir = "uploads/";
-//$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-//if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], iconv('utf-8', 'windows-1251', $target_file))) {
-//    echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
-//} else {
-//    echo "Sorry, there was an error uploading your file.";
-//}
 

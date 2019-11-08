@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <script src="../js/script.js"></script>
+<!--    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
+<!--    <script>tinymce.init({selector:'textarea'});</script>-->
     <title><?= $title ?></title>
 </head>
 <body>
