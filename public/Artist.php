@@ -5,19 +5,21 @@ class Artist
 {
     public $name;
     public $description;
+    public $linkphoto;
 
-    function __construct($name, $description)
+    function __construct($name, $description, $linkphoto)
     {
         $this->name = trim(htmlspecialchars($name));
-        $this->description = trim(htmlspecialchars($description));
+        $this->description = trim(htmlspecialchars($description), " ");
+        $this->linkphoto = $linkphoto;
     }
 
     public function name() {
-        return "<h6>$this->name</h6>";
+        return "<h5>$this->name</h5>";
     }
 
     public function description() {
-        return "<p>$this->description</p>";
+        return $this->description;
     }
 
 }

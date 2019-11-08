@@ -1,5 +1,6 @@
 <?php $title = "Артисты" ?>
-<?php require_once "header.php";
+<?php
+require_once "header.php";
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -31,6 +32,12 @@
                     <button type="button" class="btn btn-success" onmousedown="addArtist()" onclick="showArtist() ">
                         Сохранить
                     </button>
+                    <button type="reset" class="btn btn-success">
+                        Очистить
+                    </button>
+                    <span class="btn btn-success" onclick="showArtist()">
+                        Обновить
+                    </span>
                 </form>
             </div>
         </div>

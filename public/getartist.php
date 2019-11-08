@@ -11,10 +11,13 @@ try {
 $artists = $db->connect()->query("SELECT * FROM artists ORDER BY idartist DESC ");
 if ($artists) {
     foreach ($artists as $row) {
-        $artist = new Artist($row['name'], $row['description']);
+        $artist = new Artist($row['name'], $row['description'], $row['linkphoto']);
+        echo "<div class='row' ><div class='col-md-12'>";
         echo $artist->name();
-        echo $artist->description();
+        echo "<img src='" . $row['linkphoto'] . "' height='250' class=\"rounded float-right\">";
+        echo "<p style='min-height: 220px'>" . $artist->description(). "</p>";
         echo '<a href="' . $row['idartist'] . '" class="small">Редактировать</a><hr>';
+        echo "</div></div>";
     }
 }
 $db = null;
