@@ -1,5 +1,6 @@
 <?php $title = "Артисты" ?>
-<?php require_once "header.php";
+<?php
+require_once "header.php";
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -8,7 +9,7 @@
         <hr>
         <div class="row">
             <div class="col-md-8">
-                <div id="artist">
+                <div id="artist" >
                     <?php
                     //            require_once "getartist.php";
                     ?>
