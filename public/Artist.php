@@ -17,7 +17,7 @@ class Artist
     }
 
     public function description() {
-        return "<p>$this->description</p>" . "<br>";
+        return "<p>$this->description</p>";
     }
 
 }

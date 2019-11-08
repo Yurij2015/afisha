@@ -1,3 +1,11 @@
+async function addArtist() {
+    let response = await fetch('addartist.php', {
+        method: 'POST',
+        body: new FormData(artistForm)
+    });
+    let result = await response.text();
+}
+
 //загружает список после добавления
 function showArtist() {
     let getartist;
@@ -16,10 +24,4 @@ function showArtist() {
     getartist.send();
 }
 
-async function addArtist() {
-    let response = await fetch('addartist.php', {
-        method: 'POST',
-        body: new FormData(artistForm)
-    });
-    let result = await response.json();
-}
+
