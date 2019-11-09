@@ -97,24 +97,56 @@
                 <h1 class="starthead-center">Афиша</h1>
             </div>
             <div class="row contentafisha">
-                <div class="calendar contentafisha-center">Календарь</div>
+                <div class="calendar contentafisha-center"><i class="fa fa-calendar" ></i>
+                    Календарь</div>
                 <div class="emptyplace"></div>
                 <div class="search">
                     <form method="post" id="searchrequest">
                         <label for="search"></label>
                         <input placeholder="Поиск по спектаклям, артистам" id="search" name="search">
-                        <span><i class="fa fa-search"></i></span>
+                        <span><i class="fa fa-search" style="color: white"></i></span>
                     </form>
                 </div>
+                <div class="content">
+                    <div class="row col-md-12">
+                        <div class="col-md-3 content-center">
+                            <img src="public/images/ny.jpg" width="200px">
+                        </div>
+                        <div class="col-md-4 content-center">
+                            <p>«Сюрприз» </p>
+                        </div>
+                        <div class="col-md-2 content-center"><p>ДАТА</p></div>
+                        <div class="col-md-3">
+                            <a href="#" class="content-center info">Информация</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
 
-                <!--                    <div class="col-md-2">-->
-                <!--                        <p class="text-dark">jkjkj</p>-->
-                <!--                    </div>-->
-                <!--                    <div class="col-md-7">-->
-                <!--                        <p>kjkjkjkk</p>-->
-                <!--                    </div>-->
+                <div class="content">
+                    <div class="row col-md-12">
+                        <div class="col-md-3 content-center">
+                            <img src="public/images/ny.jpg" width="200px">
+                        </div>
+                        <div class="col-md-4 content-center">
+                            <p>«Сюрприз» </p>
+                        </div>
+                        <div class="col-md-2 content-center"><p>ДАТА</p></div>
+                        <div class="col-md-3">
+                            <a href="#" class="content-center info">Информация</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
             </div>
+
         </div>
+        <footer class="row">
+            <div class="col-md-12">
+                <?= "Все права защищены " . "&copy; " . date("Y")?>
+            </div>
+        </footer>
     </div>
 </div>
 </body>

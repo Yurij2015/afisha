@@ -58,6 +58,7 @@ a.authcolor:hover, a.authcolor:focus {
     background: #bd2130;
     height: 50px;
 }
+
 .emptyplace {
     width: 10%;
     height: 50px;
@@ -68,15 +69,53 @@ a.authcolor:hover, a.authcolor:focus {
     line-height: 50px;
 }
 
-.contentafisha>.search {
+.contentafisha > .search {
     text-align: justify;
     padding: 10px 0 0 10px;
 }
 
 span {
-    text-align: justify;
+    margin-left: 10px;
 }
 
 .search input {
     width: 70%;
+}
+
+.content {
+    margin: 20px auto;
+    height: 120px;
+    width: 100%;
+}
+
+.content-center {
+    line-height: 120px;
+}
+
+hr {
+    color: #6e9497;
+    margin: 0 auto;
+    width: 95%;
+    height: 3px;
+    border: none;
+    background-color: #6e9497;
+}
+
+footer{
+    background: whitesmoke;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.info{
+    background: #bd2130;
+    padding: 10px;
+}
+.content a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+
 }
