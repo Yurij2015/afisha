@@ -20,19 +20,16 @@
                 <a class="nav-link" href="/admin/pages/artists/artists.php">Главная</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Афиша</a>
+                <a class="nav-link" href="/admin/pages/timetable/timetable_view.php">Афиша</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Новости</a>
+                <a class="nav-link" href="/admin/pages/news/news_view.php">Новости</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/admin/pages/artists/artists.php">Артисты</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Отзывы</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Репертуар</a>
+                <a class="nav-link" href="/admin/pages/repertoire/repertoire_view.php">Репертуар</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/admin/pages/booking/booking_view.php">Забронированные билеты</a>

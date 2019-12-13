@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/pages/booking/booking_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/comments/Comments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/comments/comments_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/news/News.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/news/news_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/Repertoire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/Timetable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/timetable_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/booking/Booking.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +131,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages/news" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
@@ -143,6 +144,7 @@
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\news" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\pages" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
@@ -181,7 +183,7 @@
       <workItem from="1574242835175" duration="1205000" />
       <workItem from="1574353309026" duration="734000" />
       <workItem from="1574416464545" duration="145000" />
-      <workItem from="1576235052398" duration="18084000" />
+      <workItem from="1576235052398" duration="23792000" />
     </task>
     <servers />
   </component>
@@ -205,6 +207,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576268958608">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576268958608" />
     <state x="726" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576241182358">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -213,14 +219,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576243024583" />
-    <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576260194577">
+    <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576267586060">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260194577" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576260207995">
+    <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576267586060" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576267604958">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260207995" />
+    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576267604958" />
     <state x="461" y="166" key="SettingsEditor" timestamp="1576262435849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -229,5 +235,13 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="825" y="410" width="324" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260488907" />
+    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576268794049">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576268794049" />
+    <state x="170" y="202" key="refactoring.ChangeSignatureDialog" timestamp="1576265349128">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="170" y="202" key="refactoring.ChangeSignatureDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576265349128" />
   </component>
 </project>
