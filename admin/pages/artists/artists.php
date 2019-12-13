@@ -1,6 +1,6 @@
 <?php $title = "Артисты" ?>
 <?php
-require_once "header.php";
+require_once "../../header.php";
 ?>
 <div class="row">
     <div class="col-md-12">
@@ -44,5 +44,5 @@ require_once "header.php";
     </div>
 </div>
 
-<?php require_once "footer.php"; ?>
+<?php require_once "../../footer.php"; ?>
 

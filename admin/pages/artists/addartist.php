@@ -1,8 +1,8 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 
-require_once "../DbConnect.php";
-require_once "../dbsettings.php";
+require_once "../../../DbConnect.php";
+require_once "../../../dbsettings.php";
 //require_once "Artist.php";
 $name = trim(htmlspecialchars($_POST['name']));
 $description = trim(htmlspecialchars($_POST['description']), " ");
@@ -14,7 +14,7 @@ if (!empty($name) && !empty($description)) {
         echo $exc->getMessage();
     }
 
-    $target_dir = "uploads/";
+    $target_dir = "../../uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));

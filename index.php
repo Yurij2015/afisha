@@ -25,7 +25,7 @@
 <div class="container">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">
-            <img src="public/images/turandot-140x80.png" alt="Logo" style="width:140px;">
+            <img src="admin/images/turandot-140x80.png" alt="Logo" style="width:140px;">
         </a>
         <ul class="navbar-nav mr-auto">
             <!-- Dropdown -->
@@ -72,13 +72,13 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="public/images/la.jpg" alt="Los Angeles" width="1100" height="500">
+                <img src="admin/images/la.jpg" alt="Los Angeles" width="1100" height="500">
             </div>
             <div class="carousel-item">
-                <img src="public/images/chicago.jpg" alt="Chicago" width="1100" height="500">
+                <img src="admin/images/chicago.jpg" alt="Chicago" width="1100" height="500">
             </div>
             <div class="carousel-item">
-                <img src="public/images/ny.jpg" alt="New York" width="1100" height="500">
+                <img src="admin/images/ny.jpg" alt="New York" width="1100" height="500">
             </div>
         </div>
 
@@ -110,7 +110,7 @@
                 <div class="content">
                     <div class="row col-md-12">
                         <div class="col-md-3 content-center">
-                            <img src="public/images/ny.jpg" width="200px">
+                            <img src="admin/images/ny.jpg" width="200px">
                         </div>
                         <div class="col-md-4 content-center">
                             <p>«Сюрприз» </p>
@@ -126,7 +126,7 @@
                 <div class="content">
                     <div class="row col-md-12">
                         <div class="col-md-3 content-center">
-                            <img src="public/images/ny.jpg" width="200px">
+                            <img src="admin/images/ny.jpg" width="200px">
                         </div>
                         <div class="col-md-4 content-center">
                             <p>«Сюрприз» </p>

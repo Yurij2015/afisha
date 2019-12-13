@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/132045.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/Artist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/addartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/addartist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/artists.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/artists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/getartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/getartist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/chicago.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/chicago.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/la.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/la.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/ny.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/ny.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/turandot-140x80.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/turandot-140x80.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/upload" beforeDir="false" afterPath="$PROJECT_DIR$/admin/upload" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/Aleksandrova-Lyudmila.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Aleksandrova-Lyudmila.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/Bogod-Svetlana.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Bogod-Svetlana.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/Boyko-Olga.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Boyko-Olga.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/Karasevich-Sofya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Karasevich-Sofya.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/Konchits-Anzhelika.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Konchits-Anzhelika.jpg" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +68,55 @@
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="artists: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="booking: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="comments: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="news: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="repertoire: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="repertoire_has_artist: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="timetable: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -59,6 +124,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -69,30 +135,42 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="C:\xampp\htdocs\online-service" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\public" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\pages" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
+      <recent name="C:\xampp\htdocs\online-service" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -109,7 +187,14 @@
       <workItem from="1572992294130" duration="6740000" />
       <workItem from="1573113526256" duration="2731000" />
       <workItem from="1573130027423" duration="16470000" />
-      <workItem from="1573239828172" duration="20609000" />
+      <workItem from="1573235798961" duration="3396000" />
+      <workItem from="1573370768765" duration="2796000" />
+      <workItem from="1573550773537" duration="682000" />
+      <workItem from="1574190548142" duration="3175000" />
+      <workItem from="1574242835175" duration="1205000" />
+      <workItem from="1574353309026" duration="734000" />
+      <workItem from="1574416464545" duration="145000" />
+      <workItem from="1576235052398" duration="7340000" />
     </task>
     <servers />
   </component>
@@ -131,5 +216,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="726" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576241182358">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="726" y="314" key="#com.intellij.fileTypes.FileTypeChooser/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576241182358" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576243024583">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576243024583" />
+    <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576237784038">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576237784038" />
   </component>
 </project>
