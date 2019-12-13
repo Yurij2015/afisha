@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Booking.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/132045.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/booking/booking_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/comments/Comments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/comments/comments_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Artist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/Artist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/addartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/addartist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/artists.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/artists.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/getartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/getartist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/chicago.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/chicago.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/la.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/la.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ny.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/ny.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/turandot-140x80.png" beforeDir="false" afterPath="$PROJECT_DIR$/admin/images/turandot-140x80.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/upload" beforeDir="false" afterPath="$PROJECT_DIR$/admin/upload" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Aleksandrova-Lyudmila.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Aleksandrova-Lyudmila.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Bogod-Svetlana.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Bogod-Svetlana.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Boyko-Olga.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Boyko-Olga.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Karasevich-Sofya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Karasevich-Sofya.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Konchits-Anzhelika.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/Konchits-Anzhelika.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/booking/Booking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,14 +132,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\booking" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\pages" />
@@ -194,7 +181,7 @@
       <workItem from="1574242835175" duration="1205000" />
       <workItem from="1574353309026" duration="734000" />
       <workItem from="1574416464545" duration="145000" />
-      <workItem from="1576235052398" duration="7340000" />
+      <workItem from="1576235052398" duration="18084000" />
     </task>
     <servers />
   </component>
@@ -226,9 +213,21 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576243024583" />
-    <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576237784038">
+    <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576260194577">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576237784038" />
+    <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260194577" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576260207995">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260207995" />
+    <state x="461" y="166" key="SettingsEditor" timestamp="1576262435849">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="166" key="SettingsEditor/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576262435849" />
+    <state x="825" y="410" width="324" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1576260488907">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="825" y="410" width="324" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260488907" />
   </component>
 </project>

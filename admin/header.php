@@ -35,6 +35,12 @@
                 <a class="nav-link" href="#">Репертуар</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="/admin/pages/booking/booking_view.php">Забронированные билеты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/pages/comments/comments_view.php">Комментарии</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link btn btn-outline-info" href="/index.php?do=logout">Выйти</a>
             </li>
         </ul>
