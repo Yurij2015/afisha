@@ -11,6 +11,11 @@ class Booking
     public $customername;
     public $phone;
 
+    private $host = "localhost";
+    private $user = "afisha";
+    private $db = "afisha";
+    private $pass = "3004917779";
+
     function __construct($customername, $phone)
     {
         $this->customername = $customername;
@@ -27,22 +32,39 @@ class Booking
         return $this->phone;
     }
 
+
     public function timetable($timetable_id)
     {
         $timetable_data = "";
-        $host = "localhost";
-        $user = "afisha";
-        $db = "afisha";
-        $pass = "3004917779";
-        $db = new DbConnect($host, $user, $db, $pass);
+        $db = new DbConnect($this->host, $this->user, $this->db, $this->pass);
         $timetable = $db->connect()->query("SELECT * FROM timetable WHERE id = '{$timetable_id}'");
         if ($timetable) {
             foreach ($timetable as $row) {
-                $timetable_data = $row['date'] . " <br> " . $row['time'] . " <br> " . $row['duration'] . " <br> "  . $row['repertoire_idrepertoire'];
+                $timetable_data = "Дата: " .
+                    $row['date']         . " <br>Время: " .
+                    $row['time']         . " <br>Продолжительность: " .
+                    $row['duration']     . " <br>Спекталь:  " .
+                    $this->repertoire($row['repertoire_idrepertoire']);
             }
         }
         $db = null;
         return $timetable_data;
     }
+
+    public function repertoire($repertoire_idrepertoire)
+    {
+        $repertoire_name = "";
+        $db = new DbConnect($this->host, $this->user, $this->db, $this->pass);
+        $repertoire = $db->connect()->query("SELECT name FROM repertoire WHERE idrepertoire = '{$repertoire_idrepertoire}'");
+        if ($repertoire) {
+            foreach ($repertoire as $row) {
+                $repertoire_name = $row['name'];
+            }
+        }
+        $db = null;
+        return $repertoire_name;
+    }
+
+
 }
 
