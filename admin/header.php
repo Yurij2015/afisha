@@ -37,8 +37,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="/admin/pages/comments/comments_view.php">Комментарии</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link btn btn-outline-info" href="/index.php?do=logout">Выйти</a>
-            </li>
         </ul>
+        <div class="btn btn-primary float-lg-right">
+            Выйти
+        </div>
     </nav>

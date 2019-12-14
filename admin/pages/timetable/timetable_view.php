@@ -8,9 +8,9 @@ require_once "../../header.php";
         ?>
         <div class="row">
             <div class="col-md-12">
-                <div class="btn btn-primary float-lg-right mb-3">
+                <a href="add_timetable.php" class="btn btn-primary float-lg-right mb-3">
                     Добавить запись
-                </div>
+                </a>
                 <?php
                 require_once "../../../DbConnect.php";
                 require_once "../../../dbsettings.php";
@@ -28,21 +28,21 @@ require_once "../../header.php";
                         <th>Дата</th>
                         <th>Время</th>
                         <th>Длительность</th>
-                        <th>Репертуар</th>
+                        <th>Спекталь</th>
                         <th></th>
                     </tr>
                     <?php
                     $timetable = $db->connect()->query("SELECT * FROM timetable ORDER BY id DESC ");
-                    if ($news) {
-                        foreach ($news as $row) {
-                            $timetable = new Timetable($row['name'], $row['description']);
+                    if ($timetable) {
+                        foreach ($timetable as $row) {
+                            $timetable = new Timetable($row['date'], $row['time'], $row['duration'], $row['repertoire_idrepertoire']);
                             ?>
                             <tr>
                                 <td><?= $timetable->date(); ?></td>
                                 <td><?= $timetable->time(); ?></td>
                                 <td><?= $timetable->duration(); ?></td>
-                                <td><?= $row['repertoire_idrepertoire']; ?></td>
-                                <td><?= '<a href="' . $row['id'] . '" class="small">Удалить</a>' ?></td>
+                                <td><?= $timetable->repertoire($row['repertoire_idrepertoire']); ?></td>
+                                <td><?= '<a href="delete_timetable.php?id=' . $row['id'] . '" class="small">Удалить</a>' ?></td>
                             </tr>
                             <?php
                         }

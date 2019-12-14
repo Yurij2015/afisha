@@ -9,9 +9,12 @@ require_once "../../header.php";
         ?>
         <div class="row">
             <div class="col-md-12">
-                <div class="btn btn-primary float-lg-right mb-3">
+                <a href="add_repertoire.php" class="btn btn-primary float-lg-right mb-3">
                     Добавить запись
-                </div>
+                </a>
+                <a href="addrelertoire.php" class="btn btn-primary float-lg-right mb-3 mr-3">
+                    Репертуар артиста
+                </a>
                 <?php
                 require_once "../../../DbConnect.php";
                 require_once "../../../dbsettings.php";
@@ -28,7 +31,7 @@ require_once "../../header.php";
                     <tr>
                         <th>Название спектакля</th>
                         <th>Автор</th>
-                        <th>Описание</th>
+                        <th class="col-md-4">Описание</th>
                         <th>Изображение</th>
                         <th>Возврастное ограничение</th>
                         <th></th>
@@ -43,10 +46,11 @@ require_once "../../header.php";
                                 <td><?= $news->name(); ?></td>
                                 <td><?= $news->author(); ?></td>
                                 <td><?= $news->description(); ?></td>
-                                <td><?= $news->linkimg(); ?></td>
+                                <td><img src="/admin/><?= $row['linkimg']; ?>" width="300px"></td>
+
                                 <td><?= $news->agelimitation(); ?></td>
 
-                                <td><?= '<a href="' . $row['idrepertoire'] . '" class="small">Удалить</a>' ?></td>
+                                <td><?= '<a href="delete_repertoire.php?idrepertoire=' . $row['idrepertoire'] . '" class="small">Удалить</a>' ?></td>
                             </tr>
                             <?php
                         }

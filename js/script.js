@@ -24,4 +24,3 @@ function showArtist() {
     getartist.send();
 }
 
-

@@ -2,14 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/pages/news/News.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/news/news_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/Repertoire.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/Timetable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/timetable_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/news/add_news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/news/addnews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/news/delete_news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/add_repertoire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/addrelertoire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/delete_repertoire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoireofartist/repertoireofartist_view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/add_timetable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/addtimetable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/delete_timetable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/news/photo_2019-11-15_12-37-17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/news/phpmyadmin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Приложение_Начало.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/newsПриложение_Начало.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/repertoire/1OW0qfuMhUw.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/repertoire/Male-student-researching-using-laptop_1606230723946036776.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/repertoire/Размытие Пример 6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/artists/artists.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/artists.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/news/news_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/news/news_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/timetable/Timetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/timetable/Timetable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/timetable/timetable_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/timetable/timetable_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +148,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages/news" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages/timetable" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
@@ -144,11 +161,11 @@
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\timetable" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\repertoire" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\news" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\pages" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
-      <recent name="C:\xampp\htdocs\online-service" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -183,7 +200,7 @@
       <workItem from="1574242835175" duration="1205000" />
       <workItem from="1574353309026" duration="734000" />
       <workItem from="1574416464545" duration="145000" />
-      <workItem from="1576235052398" duration="23792000" />
+      <workItem from="1576235052398" duration="41841000" />
     </task>
     <servers />
   </component>
@@ -215,18 +232,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="726" y="314" key="#com.intellij.fileTypes.FileTypeChooser/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576241182358" />
+    <state x="641" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576270043641">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="641" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576270043641" />
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576243024583">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576243024583" />
-    <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576267586060">
+    <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576269315089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576267586060" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576267604958">
+    <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576269315089" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576305787611">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576267604958" />
+    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576305787611" />
     <state x="461" y="166" key="SettingsEditor" timestamp="1576262435849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

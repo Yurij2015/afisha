@@ -5,17 +5,21 @@
  * Date: 12/13/2019
  * Time: 11:06 PM
  */
+require_once "../../../DbConnect.php";
 
 class Timetable
 {
     public $date;
     public $time;
     public $duration;
+    public $repertoire_idrepertoire;
 
-    function __construct($date, $time)
+    function __construct($date, $time, $duration, $repertoire_idrepertoire)
     {
         $this->date = $date;
         $this->time = $time;
+        $this->duration = $duration;
+        $this->repertoire_idrepertoire = $repertoire_idrepertoire;
     }
 
     public function date()
@@ -32,4 +36,21 @@ class Timetable
     {
         return $this->duration;
     }
+
+    public function repertoire($repertoire_idrepertoire)
+    {
+        $host = "localhost";
+        $user = "afisha";
+        $db = "afisha";
+        $pass = "3004917779";
+        $db = new DbConnect($host, $user, $db, $pass);
+        $timetable = $db->connect()->query("SELECT name FROM repertoire WHERE idrepertoire = '{$repertoire_idrepertoire}'");
+        if ($timetable) {
+            foreach ($timetable as $row) {
+                return $row['name'];
+            }
+        }
+        $db = null;
+    }
+
 }

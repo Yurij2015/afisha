@@ -1,4 +1,4 @@
-<?php $title = "Новости" ?>
+<?php $title = "Репертуар артиста" ?>
 <?php
 require_once "../../header.php";
 ?>
@@ -8,14 +8,13 @@ require_once "../../header.php";
         ?>
         <div class="row">
             <div class="col-md-12">
-                <div class="btn btn-primary float-lg-right mb-3" onclick="location.href ='add_news.php'">
+                <div class="btn btn-primary float-lg-right mb-3">
                     Добавить запись
                 </div>
-
                 <?php
                 require_once "../../../DbConnect.php";
                 require_once "../../../dbsettings.php";
-                require_once "News.php";
+                require_once "Timetable.php";
 
                 try {
                     $db = new DbConnect($host, $user, $db, $pass);
@@ -26,22 +25,19 @@ require_once "../../header.php";
                 <table class="table table-hover table-bordered">
                     <tbody>
                     <tr>
-                        <th>Название новости</th>
-                        <th>Содержание новости</th>
-                        <th>Изображение</th>
+                        <th>Артист</th>
+                        <th>Репертуар</th>
                         <th></th>
                     </tr>
                     <?php
-                    $news = $db->connect()->query("SELECT * FROM news ORDER BY idnews DESC ");
-                    if ($news) {
-                        foreach ($news as $row) {
-                            $news = new News($row['name'], $row['description']);
+                    $repertoire_has_artist = $db->connect()->query("SELECT * FROM repertoire_has_artist ORDER BY artist_idartist DESC ");
+                    if ($repertoire_has_artist) {
+                        foreach ($repertoire_has_artist as $row) {
                             ?>
                             <tr>
-                                <td><?= $news->name(); ?></td>
-                                <td><?= $news->description(); ?></td>
-                                <td><img src="/admin/><?= $row['linkimg']; ?>" width="200px"></td>
-                                <td><?= '<a href="delete_news.php?idnews=' . $row['idnews'] . '" class="small">Удалить</a>' ?></td>
+                                <td><?= $row['repertoire_idrepertoire']; ?></td>
+                                <td><?= $row['artist_idartist']; ?></td>
+                                <td><?= '<a href="' . $row['id'] . '" class="small">Редактировать</a>' ?></td>
                             </tr>
                             <?php
                         }
