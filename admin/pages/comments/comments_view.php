@@ -35,7 +35,7 @@ require_once "../../header.php";
                             <tr>
                                 <td><?= $comments->authorname(); ?></td>
                                 <td><?= $comments->content(); ?></td>
-                                <td><?= '<a href="' . $row['idcomment'] . '" class="small">Удалить</a>' ?></td>
+                                <td><?= '<a href="delete_comment.php?idcomment=' . $row['idcomment'] . '" class="small">Удалить</a>' ?></td>
                             </tr>
                             <?php
                         }

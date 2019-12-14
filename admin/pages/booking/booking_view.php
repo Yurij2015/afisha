@@ -36,7 +36,7 @@ require_once "../../header.php";
                             <tr>
                                 <td><?= $booking->customername(); ?></td>
                                 <td><?= $booking->phone(); ?></td>
-                                <td><?= $row['timetable_id']; ?></td>
+                                <td><?= $booking->timetable($row['timetable_id']); ?></td>
                                 <td><?= '<a href="' . $row['idbook'] . '" class="small">Отменить</a>' ?></td>
                             </tr>
                             <?php

@@ -39,18 +39,20 @@ class Timetable
 
     public function repertoire($repertoire_idrepertoire)
     {
+        $repertoire_name = "";
         $host = "localhost";
         $user = "afisha";
         $db = "afisha";
         $pass = "3004917779";
         $db = new DbConnect($host, $user, $db, $pass);
-        $timetable = $db->connect()->query("SELECT name FROM repertoire WHERE idrepertoire = '{$repertoire_idrepertoire}'");
-        if ($timetable) {
-            foreach ($timetable as $row) {
-                return $row['name'];
+        $repertoire = $db->connect()->query("SELECT name FROM repertoire WHERE idrepertoire = '{$repertoire_idrepertoire}'");
+        if ($repertoire) {
+            foreach ($repertoire as $row) {
+                $repertoire_name = $row['name'];
             }
         }
         $db = null;
+        return $repertoire_name;
     }
 
 }
