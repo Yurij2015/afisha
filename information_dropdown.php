@@ -12,10 +12,10 @@ require_once "public_header.php";
             </div>
             <div class="emptyplace"></div>
             <div class="search">
-                <form method="post" id="searchrequest">
+                <form method="post" id="searchrequest" action="search.php">
                     <label for="search"></label>
                     <input placeholder="Поиск по спектаклям, артистам" id="search" name="search">
-                    <span><i class="fa fa-search" style="color: white"></i></span>
+                    <button type="submit" class="fa fa-search" style="background: transparent; color: white; border: none"></button>
                 </form>
             </div>
             <div class="container">
