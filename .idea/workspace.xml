@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/LoginForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/Password.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/RegistrationForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth/reg.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artists.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DbConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/DbConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +188,7 @@
       <workItem from="1574416464545" duration="145000" />
       <workItem from="1576235052398" duration="50167000" />
       <workItem from="1576335208120" duration="16611000" />
-      <workItem from="1576398377300" duration="23769000" />
+      <workItem from="1576398377300" duration="37285000" />
     </task>
     <servers />
   </component>
@@ -225,10 +232,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576269315089" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576422770560">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576433139593">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576422770560" />
+    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576433139593" />
     <state x="461" y="166" key="SettingsEditor" timestamp="1576262435849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -237,10 +244,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="825" y="410" width="324" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260488907" />
-    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576268794049">
+    <state x="751" y="342" width="418" height="362" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1576438292606">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576268794049" />
+    <state x="751" y="342" width="418" height="362" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576438292606" />
+    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1576438342987">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576438342987" />
     <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1576398492486">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
