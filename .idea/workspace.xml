@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/information.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/information_dropdown.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/pages/booking/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/booking/Booking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/booking/booking_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/booking/booking_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +55,6 @@
         <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="artists: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="booking: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
@@ -60,28 +62,7 @@
         <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="comments: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="news: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="repertoire: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="repertoire_has_artist: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -124,24 +105,24 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages/timetable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\timetable" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\repertoire" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\news" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\booking" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\timetable" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\repertoire" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\news" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\pages" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -176,7 +157,9 @@
       <workItem from="1574242835175" duration="1205000" />
       <workItem from="1574353309026" duration="734000" />
       <workItem from="1574416464545" duration="145000" />
-      <workItem from="1576235052398" duration="46237000" />
+      <workItem from="1576235052398" duration="50167000" />
+      <workItem from="1576335208120" duration="16611000" />
+      <workItem from="1576398377300" duration="1017000" />
     </task>
     <servers />
   </component>
@@ -200,10 +183,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576268958608">
+    <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576321421196">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576268958608" />
+    <state x="552" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576321421196" />
     <state x="726" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576241182358">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -220,10 +203,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576269315089" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576316933400">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576395377178">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576316933400" />
+    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576395377178" />
     <state x="461" y="166" key="SettingsEditor" timestamp="1576262435849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -236,9 +219,17 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576268794049" />
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1576398492486">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576398492486" />
     <state x="170" y="202" key="refactoring.ChangeSignatureDialog" timestamp="1576265349128">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="170" y="202" key="refactoring.ChangeSignatureDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576265349128" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1576321549612">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576321549612" />
   </component>
 </project>

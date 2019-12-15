@@ -25,18 +25,22 @@ require_once "../../header.php";
                         <th>ФИО посетителя</th>
                         <th>Номер телефона</th>
                         <th>Сеанс</th>
+                        <th>Ряд</th>
+                        <th>Место</th>
                         <th></th>
                     </tr>
                     <?php
                     $booking = $db->connect()->query("SELECT * FROM booking ORDER BY idbook DESC ");
                     if ($booking) {
                         foreach ($booking as $row) {
-                            $booking = new Booking($row['customername'], $row['phone']);
+                            $booking = new Booking($row['customername'], $row['phone'], $row['row'], $row['place'], $row['notes']);
                             ?>
                             <tr>
                                 <td><?= $booking->customername(); ?></td>
                                 <td><?= $booking->phone(); ?></td>
                                 <td><?= $booking->timetable($row['timetable_id']); ?></td>
+                                <td><?= $booking->row; ?></td>
+                                <td><?= $booking->place; ?></td>
                                 <td><?= '<a href="' . $row['idbook'] . '" class="small">Отменить</a>' ?></td>
                             </tr>
                             <?php

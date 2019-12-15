@@ -10,16 +10,22 @@ class Booking
 {
     public $customername;
     public $phone;
+    public $row;
+    public $place;
+    public $notes;
 
     private $host = "localhost";
     private $user = "afisha";
     private $db = "afisha";
     private $pass = "3004917779";
 
-    function __construct($customername, $phone)
+    function __construct($customername, $phone, $row, $place, $notes)
     {
         $this->customername = $customername;
         $this->phone = $phone;
+        $this->row = $row;
+        $this->place = $place;
+        $this->notes = $notes;
     }
 
     public function customername()
@@ -32,7 +38,6 @@ class Booking
         return $this->phone;
     }
 
-
     public function timetable($timetable_id)
     {
         $timetable_data = "";
@@ -41,9 +46,8 @@ class Booking
         if ($timetable) {
             foreach ($timetable as $row) {
                 $timetable_data = "Дата: " .
-                    $row['date']         . " <br>Время: " .
-                    $row['time']         . " <br>Продолжительность: " .
-                    $row['duration']     . " <br>Спекталь:  " .
+                    $row['date'] . " <br>Время: " .
+                    $row['time'] . " <br>Спекталь:  " .
                     $this->repertoire($row['repertoire_idrepertoire']);
             }
         }
