@@ -1,5 +1,5 @@
 <?php
-$title = "Афиша. Главная страница";
+$title = "Поиск";
 require_once "public_header.php";
 ?>
 <div class="container">
@@ -27,8 +27,6 @@ require_once "public_header.php";
                     </button>
                 </form>
             </div>
-
-
             <div class="emptyplace"></div>
             <div class="search">
                 <form method="post" id="searchrequest" action="search.php">
@@ -38,36 +36,37 @@ require_once "public_header.php";
                             style="background: transparent; color: white; border: none"></button>
                 </form>
             </div>
-
-
-            <script>
-                var myElement = document.getElementById("datapicker");
-                document.getElementById("demo").innerHTML =
-                    "The text from the intro paragraph is " + myElement.innerHTML;
-            </script>
-
-
             <div class="container">
-                <div class="content" id="content">
+                <div class="content" id="search_date">
                     <?php
-                    $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire ORDER BY id DESC ");
+                    $search = $_POST['search'];
+                    $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire WHERE date='{$search}'");
                     if ($timetable) {
                         foreach ($timetable as $row) {
                             ?>
-                            <div class="row col-md-12">
-                                <div class="col-md-3 content-center">
-                                    <img src="/admin/><?= $row['linkimg']; ?>" width="200px" class="mb-2">
+                            <div class="row col-md-12 mb-5 mt-5">
+                                <div class="col-md-12" id="info">
+                                    <img src="/admin/><?= $row['linkimg']; ?>" width="400px"
+                                         class="float-left mr-3">
+                                    <p class="text-justify mb-0"><span
+                                                class="font-weight-bold">Название спектакля:</span> <?= $row['name']; ?>
+                                    </p>
+                                    <p class="text-justify mb-0"><span
+                                            class="font-weight-bold">Дата:</span> <?= $row['date']; ?>
+                                    </p>
+                                    <p class="text-justify mb-0"><span
+                                            class="font-weight-bold">Время:</span> <?= $row['time']; ?>
+                                    </p>
+                                    <p class="text-justify mb-0"><span
+                                                class="font-weight-bold">Ограничение по возрасту:</span> <?= $row['agelimitation']; ?>
+                                    </p>
+                                    <p class="text-justify mb-1"><span
+                                                class="font-weight-bold">Автор:</span> <?= $row['author']; ?></p>
+                                    <p class="text-justify"><span
+                                                class="font-weight-bold">Описание: </span><?= $row['description']; ?>
+                                    </p>
                                 </div>
-                                <div class="col-md-4 content-center">
-                                    <p><?= $row['name']; ?></p>
-                                </div>
-                                <div class="col-md-2 content-center">
-                                    <p><?= $row['date'] . "&nbsp;" . $row['time']; ?></p>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="information.php?id=<?= $row['id']; ?>#info"
-                                       class="content-center info">Информация</a>
-                                </div>
+
                             </div>
                             <hr>
                             <?php

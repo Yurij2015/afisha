@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/add_comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add_comment_handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artists.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/search_date.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/news/news_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/news/news_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_comment_handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_comment_handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/information.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/information_dropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/information_dropdown.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
@@ -189,7 +185,7 @@
       <workItem from="1574416464545" duration="145000" />
       <workItem from="1576235052398" duration="50167000" />
       <workItem from="1576335208120" duration="16611000" />
-      <workItem from="1576398377300" duration="13719000" />
+      <workItem from="1576398377300" duration="23501000" />
     </task>
     <servers />
   </component>
@@ -225,18 +221,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="641" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576270043641" />
-    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576243024583">
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576419484519">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576243024583" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576419484519" />
     <state x="758" y="322" key="NewPhpClassDialog" timestamp="1576269315089">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576269315089" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576412802797">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576422770560">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576412802797" />
+    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576422770560" />
     <state x="461" y="166" key="SettingsEditor" timestamp="1576262435849">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

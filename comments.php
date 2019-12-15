@@ -8,9 +8,26 @@ require_once "public_header.php";
             <h1 class="starthead-center">Афиша</h1>
         </div>
         <div class="row contentafisha">
-            <div class="calendar contentafisha-center"><i class="fa fa-calendar"></i>
-                Календарь
+            <div class="calendar contentafisha-center">
+                <form method="post" action="search_date.php#search_date">
+                    <label>
+                        <select class="form-control form-control-sm font-weight-bold" name="search" style="background: transparent; color: white; border: none;">
+                            <option selected value="" disabled class="font-weight-bold">Календарь</option>
+                            <?php
+                            $timetable = $db->connect()->query("SELECT DISTINCT date FROM timetable");
+                            foreach ($timetable as $timetabledate) {
+                                ?>
+                                <option value="<?php echo $timetabledate['date'] ?>"><?php echo $timetabledate['date'] ?></option>
+                            <?php } ?>
+                            ?>
+                        </select>
+                    </label>
+                    <button type="submit" class="fa fa-search"
+                            style="background: transparent; color: white; border: none">
+                    </button>
+                </form>
             </div>
+
             <div class="emptyplace"></div>
             <div class="search">
                 <form method="post" id="searchrequest" action="search.php">
@@ -27,7 +44,7 @@ require_once "public_header.php";
                     if ($artists) {
                         foreach ($artists as $row) {
                             ?>
-                            <div class="row col-md-12 mb-3 mt-3">
+                            <div class="row col-md-12 mb-0 mt-2">
                                 <div class="col-md-12" id="info">
                                     <p class="text-justify mb-0"><span
                                                 class="font-weight-bold"> <?= $row['authorname']; ?></span></p>
