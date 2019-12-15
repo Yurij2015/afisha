@@ -40,7 +40,7 @@ require_once "../../header.php";
                             <tr>
                                 <td><?= $news->name(); ?></td>
                                 <td><?= $news->description(); ?></td>
-                                <td><img src="/admin/><?= $row['linkimg']; ?>" width="200px"></td>
+                                <td><img src="/admin/<?= $row['linkimg']; ?>" width="200px"></td>
                                 <td><?= '<a href="delete_news.php?idnews=' . $row['idnews'] . '" class="small">Удалить</a>' ?></td>
                             </tr>
                             <?php

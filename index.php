@@ -1,4 +1,5 @@
 <?php
+$title = "Афиша. Главная страница";
 require_once "public_header.php";
 ?>
 <div class="container">
@@ -19,7 +20,7 @@ require_once "public_header.php";
                 </form>
             </div>
             <div class="container">
-                <div class="content">
+                <div class="content" id="content">
                     <?php
                     $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire ORDER BY id DESC ");
                     if ($timetable) {

@@ -1,4 +1,5 @@
 <?php
+$title = "Поиск";
 require_once "public_header.php";
 ?>
 <div class="container">

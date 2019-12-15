@@ -1,5 +1,5 @@
 <?php
-$title = "Информация о спектакле";
+$title = "Новости";
 require_once "public_header.php";
 ?>
 <div class="container">
@@ -21,29 +21,18 @@ require_once "public_header.php";
                 </form>
             </div>
             <div class="container">
-                <div class="content">
+                <div class="content" id="comments">
                     <?php
-                    $id = $_GET['id'];
-                    $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire WHERE id = '{$id}' ORDER BY id DESC ");
-                    if ($timetable) {
-                        foreach ($timetable as $row) {
+                    $artists = $db->connect()->query("SELECT * FROM comments ORDER BY idcomment DESC ");
+                    if ($artists) {
+                        foreach ($artists as $row) {
                             ?>
-                            <div class="row col-md-12 mb-5 mt-5">
+                            <div class="row col-md-12 mb-3 mt-3">
                                 <div class="col-md-12" id="info">
-                                    <img src="/admin/uploads<?= $row['linkimg']; ?>" width="400px"
-                                         class="float-left mr-3">
                                     <p class="text-justify mb-0"><span
-                                                class="font-weight-bold"> Дата:</span> <?= $row['date'] . "&nbsp;" . $row['time']; ?>
-                                    </p>
-                                    <p class="text-justify mb-0"><span
-                                                class="font-weight-bold">Название:</span> <?= $row['name']; ?></p>
-                                    <p class="text-justify mb-0"><span
-                                                class="font-weight-bold">Ограничение по возрасту:</span> <?= $row['agelimitation']; ?>
-                                    </p>
-                                    <p class="text-justify mb-1"><span
-                                                class="font-weight-bold">Автор:</span> <?= $row['author']; ?></p>
+                                                class="font-weight-bold"> <?= $row['authorname']; ?></span></p>
                                     <p class="text-justify"><span
-                                                class="font-weight-bold">Описание: </span><?= $row['description']; ?>
+                                                class="font-weight-bold"></span><?= $row['content']; ?>
                                     </p>
                                 </div>
                             </div>
@@ -54,6 +43,9 @@ require_once "public_header.php";
                     $db = null;
                     ?>
                 </div>
+                <a href="add_comment.php#comments" class="btn btn-danger float-lg-right mb-3">
+                    Добавить отзыв
+                </a>
             </div>
         </div>
 

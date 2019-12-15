@@ -1,4 +1,5 @@
 <?php
+$title = "Расписание по спектаклям";
 require_once "public_header.php";
 ?>
 <div class="container">
