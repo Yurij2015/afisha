@@ -54,6 +54,9 @@ require_once "public_header.php";
                     $db = null;
                     ?>
                 </div>
+                <a href="add_comment.php#comments" class="btn btn-danger float-lg-right mb-3">
+                    Забронировать
+                </a>
             </div>
         </div>
 
