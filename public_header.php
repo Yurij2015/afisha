@@ -36,7 +36,7 @@ require_once 'Session.php';
         </a>
         <ul class="navbar-nav mr-auto">
             <!-- Dropdown -->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown ml-5 pr-5">
                 <a class="nav-link dropdown-toggle" href="/" id="navbardrop" data-toggle="dropdown">
                     Афиша
                 </a>
@@ -57,13 +57,13 @@ require_once 'Session.php';
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/news.php#news">Новости</a>
+                <a class="nav-link ml-5 pr-5" href="/news.php#news">Новости</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/artists.php#artists">Артисты</a>
+                <a class="nav-link ml-5 pr-5" href="/artists.php#artists">Артисты</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/comments.php#comments">Отзывы</a>
+                <a class="nav-link ml-5 pr-5" href="/comments.php#comments">Отзывы</a>
             </li>
         </ul>
         <ul class="navbar-nav">
@@ -75,10 +75,8 @@ require_once 'Session.php';
                 </li>
             <?php else : ?>
                 <li class="nav-item">
-
                     <a class="nav-link authcolor small" href="/auth/auth.php#auth"><i class="fas fa-user"></i>
                         Авторизация</a>
-
                 </li>
                 <li class="nav-item">
                     <a class="nav-link authcolor small" href="/auth/reg.php#reg">Регистрация</a>

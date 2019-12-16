@@ -27,7 +27,13 @@ if ($_POST) {
             $msg = 'Пользователь с таким эл. адресом уже существует!';
         } else {
             $db->connect()->query("INSERT INTO `users` (email, username, usersecondname, password) VALUES ('{$email}','{$username}', '{$usersecondname}','{$password}')");
-            header('location: auth.php?msg=Регистрация прошла успешно!');
+//            header('location: auth.php?msg=Регистрация прошла успешно!');
+            ?>
+            <script>
+                location.href = "/auth.php";
+            </script>
+            <?php
+
         }
     } else {
         $msg = $form->passwordsMatch() ? 'Пожалуйста, заполните все поля' : 'Пароли не совпадают';

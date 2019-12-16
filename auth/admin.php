@@ -9,8 +9,9 @@ session_start();
 require_once '../Session.php';
 
 if (Session::has('email')) {
-    echo 'Hello, ' . Session::get('email');
+//    echo 'Hello, ' . Session::get('email');
+    header('Location: /admin/pages/artists/artists.php');
 } else {
     echo 'Защищенная часть!';
-    // header('Location: index.php');
+//    header('Location: admin/pages/artists/artiss.php');
 }

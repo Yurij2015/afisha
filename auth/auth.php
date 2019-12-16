@@ -27,10 +27,21 @@ if ($_POST) {
             foreach ($res as $row) {
                 $email = $row['email'];
                 Session::set('email', $email);
+                if ($row['roles'] == 0) {
+                    ?>
+                    <script>
+                        location.href = "/index.php";
+                    </script>
+                    <?php
+                }
+                if ($row['roles'] == 1) {
+                    ?>
+                    <script>
+                        location.href = "/auth/admin.php";
+                    </script>
+                    <?php
+                }
                 ?>
-                <script>
-                    location.href = "/index.php";
-                </script>
                 <?php
 //                header('location: auth.php?msg=Вы авторизированы на сайте');
             }
@@ -60,7 +71,6 @@ if ($_POST) {
                                 <option value="<?php echo $timetabledate['date'] ?>"><?php echo $timetabledate['date'] ?></option>
                             <?php }
                             $db = null;
-
                             ?>
 
                         </select>

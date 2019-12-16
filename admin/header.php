@@ -1,3 +1,11 @@
+<?php
+session_start();
+require_once '../../../Session.php';
+if (!Session::has('email')) {
+//    echo 'У вас нет доступа к админ-панели!';
+    header('Location: /index.php');
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,8 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/../bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <script src="/../js/script.js"></script>
-<!--    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
-<!--    <script>tinymce.init({selector:'textarea'});</script>-->
+    <!--    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>-->
+    <!--    <script>tinymce.init({selector:'textarea'});</script>-->
     <title><?= $title ?></title>
 </head>
 <body>
@@ -38,7 +46,6 @@
                 <a class="nav-link" href="/admin/pages/comments/comments_view.php">Комментарии</a>
             </li>
         </ul>
-        <div class="btn btn-primary float-lg-right">
-            Выйти
-        </div>
+        <a class="btn btn-primary mr-5" href="/../auth/logout.php" role="button">Выйти (<?= Session::get('email'); ?>
+            )</a>
     </nav>
