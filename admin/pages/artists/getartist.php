@@ -16,7 +16,7 @@ if ($artists) {
         echo $artist->name();
         echo "<img src='/admin/" . $row['linkphoto'] . "' height='250' class=\"rounded float-right\">";
         echo "<p style='min-height: 220px'>" . $artist->description(). "</p>";
-        echo '<a href="' . $row['idartist'] . '" class="small">Редактировать</a><hr>';
+        echo '<a href="edit_artist.php?idartist=' . $row['idartist'] . '" class="small">Редактировать</a><hr>';
         echo "</div></div>";
     }
 }

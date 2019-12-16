@@ -41,7 +41,9 @@ require_once "../../header.php";
                                 <td><?= $news->name(); ?></td>
                                 <td><?= $news->description(); ?></td>
                                 <td><img src="/admin/<?= $row['linkimg']; ?>" width="200px"></td>
-                                <td><?= '<a href="delete_news.php?idnews=' . $row['idnews'] . '" class="small">Удалить</a>' ?></td>
+                                <td><?= '<a href="delete_news.php?idnews=' . $row['idnews'] . '" class="small">Удалить</a>' ?>
+                                    | <?= '<a href="edit_news.php?idnews=' . $row['idnews'] . '" class="small">Редактировать</a>' ?>
+                                </td>
                             </tr>
                             <?php
                         }

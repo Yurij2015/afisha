@@ -42,7 +42,9 @@ require_once "../../header.php";
                                 <td><?= $timetable->time(); ?></td>
                                 <td><?= $timetable->duration(); ?></td>
                                 <td><?= $timetable->repertoire($row['repertoire_idrepertoire']); ?></td>
-                                <td><?= '<a href="delete_timetable.php?id=' . $row['id'] . '" class="small">Удалить</a>' ?></td>
+                                <td><?= '<a href="delete_timetable.php?id=' . $row['id'] . '" class="small">Удалить</a>' ?>
+                                | <?= '<a href="edit_timetable.php?id=' . $row['id'] . '" class="small">Редактировать</a>' ?>
+                                </td>
                             </tr>
                             <?php
                         }
