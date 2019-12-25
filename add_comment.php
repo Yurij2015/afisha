@@ -24,7 +24,7 @@ require_once "public_header.php";
                 <div class="content" id="comments">
                     <div class="row col-md-12 mb-3 mt-3">
                         <div class="col-md-12">
-                            <form method="post" enctype="multipart/form-data" id="artistForm"
+                            <form method="post"  id="artistForm"
                                   action="add_comment_handler.php">
                                 <div class="form-group">
                                     <label for="authorname" class="float-left">Ваше имя</label>

@@ -31,14 +31,15 @@ require_once "public_header.php";
                 <div class="content" id="comments">
                     <div class="row col-md-12 mb-3 mt-3">
                         <div class="col-md-12">
-                            <p>Вы бронируете место на спектакль <?=$name?>, дата <?=$date?>, время <?=$time?> </p>
+                            <p>Вы бронируете место на спектакль <?= $name ?>, дата <?= $date ?>, время <?= $time ?> </p>
                             <form method="post" enctype="multipart/form-data" id="artistForm"
                                   action="add_order_handler.php">
                                 <div class="form-group">
                                     <label for="customername" class="float-left">Ваше имя</label>
-                                    <input type="text" class="form-control" name="customername" id="customername" required>
+                                    <input type="text" class="form-control" name="customername" id="customername"
+                                           required>
                                 </div>
-                                <input hidden name="timetable_id" value="<?=$timetable?>">
+                                <input hidden name="timetable_id" value="<?= $timetable ?>">
                                 <div class="form-group">
                                     <label for="phone" class="float-left">Номер телефона</label>
                                     <input type="text" class="form-control" name="phone" id="phone" required>
@@ -47,10 +48,10 @@ require_once "public_header.php";
                                     <label for="row" class="float-left">Ряд</label>
                                     <select class="form-control" name="row" id="row">
                                         <?php
-                                        for ($i = 1; $i<=15; $i++) {
+                                        for ($i = 1; $i <= 15; $i++) {
                                             ?>
-                                            <option value="<?=$i?>"><?=$i?></option>
-                                        <?php
+                                            <option value="<?= $i ?>"><?= $i ?></option>
+                                            <?php
                                         }
                                         ?>
                                     </select>
@@ -59,22 +60,19 @@ require_once "public_header.php";
                                     <label for="place" class="float-left">Место</label>
                                     <select class="form-control" name="place" id="place">
                                         <?php
-                                        for ($i = 1; $i<=18; $i++) {
+                                        for ($i = 1; $i <= 18; $i++) {
                                             ?>
-                                            <option value="<?=$i?>"><?=$i?></option>
+                                            <option value="<?= $i ?>"><?= $i ?></option>
                                             <?php
                                         }
                                         ?>
                                     </select>
                                 </div>
-
                                 <input type="submit" class="btn btn-danger float-right" value="Сохранить">
                                 <button type="reset" class="btn btn-danger float-right mr-2">
                                     Очистить
                                 </button>
                             </form>
-
-
                         </div>
                     </div>
                     <hr>
@@ -82,7 +80,6 @@ require_once "public_header.php";
                 </div>
             </div>
         </div>
-
     </div>
     <footer class="row">
         <div class="col-md-12">

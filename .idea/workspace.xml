@@ -2,28 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/add_order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/add_order_handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/artists/edit_artist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/artists/editartist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/news/edit_news.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/news/editnews.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/edit_timetable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/timetable/edittimetable.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/123.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/25.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/9LH9MbA70Ms.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Male-student-researching-using-laptop_1606230723946036776.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Пример 10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Пример 9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Размытие Пример 11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Размытие Пример 6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Размытие Пример 7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/edit_repertoire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/pages/repertoire/editrepertoire.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/Bogod-Svetlana (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/Konchits-Anzhelika (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Premera-na-ura-Lovushka-dlya-ptits-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Teatr-u-shkolnoy-doski11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/news/Vorkshop-po---Oneginu--.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/repertoire/04c9c4079662f41d91dc4501a71b6ae7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/repertoire/AVANTYURISTKI-PONEVOLE-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/repertoire/dsc03952.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/uploads/Красевич.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/artists/getartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/getartist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/news/news_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/news/news_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/timetable/timetable_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/timetable/timetable_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/artists/addartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/addartist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/132045.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/9LH9MbA70Ms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/Male-student-researching-using-laptop_1606230723946036776.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/photo_2019-11-15_12-37-17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/phpmyadmin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/Приложение_Начало.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/Пример 10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/Пример 9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/Размытие Пример 11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/Размытие Пример 6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/news/Размытие Пример 7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/newsПриложение_Начало.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/repertoire/1OW0qfuMhUw.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/repertoire/Male-student-researching-using-laptop_1606230723946036776.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/uploads/repertoire/Размытие Пример 6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/information.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,25 +159,26 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages/repertoire" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\repertoire" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\news" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\timetable" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\booking" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\news" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\timetable" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\repertoire" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -201,7 +217,12 @@
       <workItem from="1576335208120" duration="16611000" />
       <workItem from="1576398377300" duration="45985000" />
       <workItem from="1576468310752" duration="2349000" />
-      <workItem from="1576471324844" duration="12628000" />
+      <workItem from="1576471324844" duration="13419000" />
+      <workItem from="1576502768422" duration="89000" />
+      <workItem from="1576508088371" duration="10753000" />
+      <workItem from="1576522825111" duration="680000" />
+      <workItem from="1576546122551" duration="948000" />
+      <workItem from="1577261838305" duration="46000" />
     </task>
     <servers />
   </component>
@@ -265,10 +286,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576438342987" />
-    <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1576471326139">
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1576546333368">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="636" y="347" key="com.intellij.ide.util.TipDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576471326139" />
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576546333368" />
     <state x="607" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576444557222">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

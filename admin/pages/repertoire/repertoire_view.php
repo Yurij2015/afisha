@@ -46,11 +46,14 @@ require_once "../../header.php";
                                 <td><?= $news->name(); ?></td>
                                 <td><?= $news->author(); ?></td>
                                 <td><?= $news->description(); ?></td>
-                                <td><img src="/admin/><?= $row['linkimg']; ?>" width="300px"></td>
+                                <td><img src="/admin/<?= $row['linkimg']; ?>" width="300px"></td>
 
                                 <td><?= $news->agelimitation(); ?></td>
 
-                                <td><?= '<a href="delete_repertoire.php?idrepertoire=' . $row['idrepertoire'] . '" class="small">Удалить</a>' ?></td>
+                                <td><?= '<a href="delete_repertoire.php?idrepertoire=' . $row['idrepertoire'] . '" class="small">Удалить</a>' ?>
+                                    <?= '<a href="edit_repertoire.php?idrepertoire=' . $row['idrepertoire'] . '" class="small">Редактировать</a>' ?>
+
+                                </td>
                             </tr>
                             <?php
                         }

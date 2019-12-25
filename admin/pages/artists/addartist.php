@@ -14,6 +14,7 @@ if (!empty($name) && !empty($description)) {
         echo $exc->getMessage();
     }
 
+    $target_file_for_db = "uploads/" . basename($_FILES["fileToUpload"]["name"]);
     $target_dir = "../../uploads/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
@@ -56,7 +57,7 @@ if (!empty($name) && !empty($description)) {
             echo "Sorry, there was an error uploading your file.";
         }
     }
-    $artists = $db->connect()->query("INSERT INTO artists (`name`, `description`, `linkphoto`) VALUES ('{$name}','{$description}', '{$target_file}')");
+    $artists = $db->connect()->query("INSERT INTO artists (`name`, `description`, `linkphoto`) VALUES ('{$name}','{$description}', '{$target_file_for_db}')");
     $db = null;
     echo 'Готово! ';
 } else {

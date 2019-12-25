@@ -11,7 +11,8 @@ require_once "public_header.php";
             <div class="calendar contentafisha-center">
                 <form method="post" action="search_date.php#search_date">
                     <label>
-                        <select class="form-control form-control-sm font-weight-bold" name="search" style="background: transparent; color: white; border: none;">
+                        <select class="form-control form-control-sm font-weight-bold" name="search"
+                                style="background: transparent; color: white; border: none;">
                             <option selected value="" disabled class="font-weight-bold">Календарь</option>
                             <?php
                             $timetable = $db->connect()->query("SELECT DISTINCT date FROM timetable");
@@ -38,15 +39,6 @@ require_once "public_header.php";
                             style="background: transparent; color: white; border: none"></button>
                 </form>
             </div>
-
-
-            <script>
-                var myElement = document.getElementById("datapicker");
-                document.getElementById("demo").innerHTML =
-                    "The text from the intro paragraph is " + myElement.innerHTML;
-            </script>
-
-
             <div class="container">
                 <div class="content" id="content">
                     <?php
@@ -56,15 +48,15 @@ require_once "public_header.php";
                             ?>
                             <div class="row col-md-12">
                                 <div class="col-md-3 content-center">
-                                    <img src="/admin/><?= $row['linkimg']; ?>" width="200px" class="mb-2">
+                                    <img src="/admin/<?= $row['linkimg']; ?>" width="200px" class="mb-2 mt-2">
                                 </div>
-                                <div class="col-md-4 content-center">
+                                <div class="col-md-4 content-center mt-2">
                                     <p><?= $row['name']; ?></p>
                                 </div>
-                                <div class="col-md-2 content-center">
+                                <div class="col-md-2 content-center mt-2">
                                     <p><?= $row['date'] . "&nbsp;" . $row['time']; ?></p>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3 mt-2">
                                     <a href="information.php?id=<?= $row['id']; ?>#info"
                                        class="content-center info">Информация</a>
                                 </div>

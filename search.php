@@ -45,7 +45,7 @@ require_once "public_header.php";
                             ?>
                             <div class="row col-md-12 mb-5 mt-5">
                                 <div class="col-md-12" id="info">
-                                    <img src="/admin/><?= $row['linkimg']; ?>" width="400px"
+                                    <img src="/admin/<?= $row['linkimg']; ?>" width="400px"
                                          class="float-left mr-3">
                                     <p class="text-justify mb-0"><span
                                                 class="font-weight-bold">Название спектакля:</span> <?= $row['reportoirename']; ?></p>

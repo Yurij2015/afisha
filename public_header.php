@@ -3,7 +3,6 @@ session_start();
 require_once "DbConnect.php";
 require_once "dbsettings.php";
 require_once 'Session.php';
-
 ?>
 <!doctype html>
 <html lang="en">
@@ -94,13 +93,13 @@ require_once 'Session.php';
         <!-- The slideshow -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/admin/images/la.jpg" alt="Los Angeles" width="1100" height="500">
+                <img src="/admin/images/la.jpg" alt="Спектакль 1" width="1100" height="500">
             </div>
             <div class="carousel-item">
-                <img src="/admin/images/chicago.jpg" alt="Chicago" width="1100" height="500">
+                <img src="/admin/images/chicago.jpg" alt="Спектакль 2" width="1100" height="500">
             </div>
             <div class="carousel-item">
-                <img src="/admin/images/ny.jpg" alt="New York" width="1100" height="500">
+                <img src="/admin/images/ny.jpg" alt="Спектакль 3" width="1100" height="500">
             </div>
         </div>
         <!-- Left and right controls -->
