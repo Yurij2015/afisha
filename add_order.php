@@ -25,13 +25,49 @@ require_once "public_header.php";
             $time = $_GET['time'];
             $name = $_GET['name'];
             $timetable = $_GET['timetable'];
-
             ?>
             <div class="container">
                 <div class="content" id="comments">
                     <div class="row col-md-12 mb-3 mt-3">
                         <div class="col-md-12">
                             <p>Вы бронируете место на спектакль <?= $name ?>, дата <?= $date ?>, время <?= $time ?> </p>
+                            <hr class="mb-3">
+                            <?php
+                            $init_row = 13;
+                            $init_place = 12;
+                            for ($_row = 1; $_row <= $init_row; $_row++) {
+                                ?>
+                                <div class="row">
+                                    <div class="col hoverDiv"><?= $_row ?></div>
+                                    <?php
+                                    for ($_place = 1; $_place <= $init_place; $_place++) {
+                                        ?>
+                                        <div class="col card hoverDiv
+                                        <?php
+                                        require_once "DbConnect.php";
+                                        require_once "dbsettings.php";
+                                        try {
+                                            $db = new DbConnect("localhost", "afisha", "afisha", "3004917779");
+                                        } catch (PDOException $exc) {
+                                            echo $exc->getMessage();
+                                        }
+                                        $res = $db->connect()->query("SELECT css_style FROM booking WHERE row = $_row AND place = $_place AND timetable_id = $timetable");
+                                        foreach ($res as $row) {
+                                            echo $row['css_style'];
+                                        }
+                                        ?>">
+                                            <a href="/information.php?id=<?=$timetable?>&<?= $_place ?>"
+                                               class="nounderLine"><?= $_place ?>
+                                            </a>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                            <hr class="mt-3 mb-3">
                             <form method="post" enctype="multipart/form-data" id="artistForm"
                                   action="add_order_handler.php">
                                 <div class="form-group">
@@ -48,9 +84,9 @@ require_once "public_header.php";
                                     <label for="row" class="float-left">Ряд</label>
                                     <select class="form-control" name="row" id="row">
                                         <?php
-                                        for ($i = 1; $i <= 15; $i++) {
+                                        for ($row = 1; $row <= $init_row; $row++) {
                                             ?>
-                                            <option value="<?= $i ?>"><?= $i ?></option>
+                                            <option value="<?= $row ?>"><?= $row ?></option>
                                             <?php
                                         }
                                         ?>
@@ -60,9 +96,9 @@ require_once "public_header.php";
                                     <label for="place" class="float-left">Место</label>
                                     <select class="form-control" name="place" id="place">
                                         <?php
-                                        for ($i = 1; $i <= 18; $i++) {
+                                        for ($place = 1; $place <= $init_place; $place++) {
                                             ?>
-                                            <option value="<?= $i ?>"><?= $i ?></option>
+                                            <option value="<?= $place ?>"><?= $place ?></option>
                                             <?php
                                         }
                                         ?>
