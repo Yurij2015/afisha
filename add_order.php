@@ -8,8 +8,21 @@ require_once "public_header.php";
             <h1 class="starthead-center">Афиша</h1>
         </div>
         <div class="row contentafisha">
-            <div class="calendar contentafisha-center"><i class="fa fa-calendar"></i>
-                Календарь
+            <div class="calendar contentafisha-center">
+                <form method="post" action="search_date.php#search_date">
+
+                    <div class="input-group ml-5" style="margin-top: 10px;">
+                        <label>
+                            <input placeholder="Календарь" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"
+                                   class="form-control form-control-sm font-weight-bold mt-0" style="width: 210px">
+                        </label>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary fa fa-search mb-1" type="submit"
+                                    style="background: transparent; color: white; border: none;"></button>
+                        </div>
+
+                    </div>
+                </form>
             </div>
             <div class="emptyplace"></div>
             <div class="search">
@@ -35,7 +48,7 @@ require_once "public_header.php";
                             <?php
                             $init_row = 11;
                             $init_place = 16;
-                            for ($_row = 1; $_row <= $init_row-6; $_row++) {
+                            for ($_row = 1; $_row <= $init_row - 6; $_row++) {
                                 ?>
                                 <div class="row">
                                     <div class="col hoverDiv"><?= $_row ?></div>
@@ -56,7 +69,7 @@ require_once "public_header.php";
                                             echo $row['css_style'];
                                         }
                                         ?>">
-                                            <a href="/information.php?id=<?=$timetable?>&<?= $_place ?>"
+                                            <a href="/information.php?id=<?= $timetable ?>&<?= $_place ?>"
                                                class="nounderLine"><?= $_place ?>
                                             </a>
                                         </div>
@@ -74,7 +87,7 @@ require_once "public_header.php";
                                 <div class="row">
                                     <div class="col hoverDiv"><?= $_row ?></div>
                                     <?php
-                                    for ($_place = 1; $_place <= $init_place+1; $_place++) {
+                                    for ($_place = 1; $_place <= $init_place + 1; $_place++) {
                                         ?>
                                         <div class="col card hoverDiv
                                         <?php
@@ -90,7 +103,7 @@ require_once "public_header.php";
                                             echo $row['css_style'];
                                         }
                                         ?>">
-                                            <a href="/information.php?id=<?=$timetable?>&<?= $_place ?>"
+                                            <a href="/information.php?id=<?= $timetable ?>&<?= $_place ?>"
                                                class="nounderLine"><?= $_place ?>
                                             </a>
                                         </div>
@@ -132,7 +145,7 @@ require_once "public_header.php";
                                     <label for="place" class="float-left">Место</label>
                                     <select class="form-control" name="place" id="place">
                                         <?php
-                                        for ($place = 1; $place <= $init_place+1; $place++) {
+                                        for ($place = 1; $place <= $init_place + 1; $place++) {
                                             ?>
                                             <option value="<?= $place ?>"><?= $place ?></option>
                                             <?php
