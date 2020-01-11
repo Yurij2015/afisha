@@ -33,14 +33,48 @@ require_once "public_header.php";
                             <p>Вы бронируете место на спектакль <?= $name ?>, дата <?= $date ?>, время <?= $time ?> </p>
                             <hr class="mb-3">
                             <?php
-                            $init_row = 13;
-                            $init_place = 12;
-                            for ($_row = 1; $_row <= $init_row; $_row++) {
+                            $init_row = 11;
+                            $init_place = 16;
+                            for ($_row = 1; $_row <= $init_row-6; $_row++) {
                                 ?>
                                 <div class="row">
                                     <div class="col hoverDiv"><?= $_row ?></div>
                                     <?php
                                     for ($_place = 1; $_place <= $init_place; $_place++) {
+                                        ?>
+                                        <div class="col card hoverDiv
+                                        <?php
+                                        require_once "DbConnect.php";
+                                        require_once "dbsettings.php";
+                                        try {
+                                            $db = new DbConnect("localhost", "afisha", "afisha", "3004917779");
+                                        } catch (PDOException $exc) {
+                                            echo $exc->getMessage();
+                                        }
+                                        $res = $db->connect()->query("SELECT css_style FROM booking WHERE row = $_row AND place = $_place AND timetable_id = $timetable");
+                                        foreach ($res as $row) {
+                                            echo $row['css_style'];
+                                        }
+                                        ?>">
+                                            <a href="/information.php?id=<?=$timetable?>&<?= $_place ?>"
+                                               class="nounderLine"><?= $_place ?>
+                                            </a>
+                                        </div>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                            <hr class="mt-3 mb-3">
+                            <?php
+                            for ($_row = 6; $_row <= $init_row; $_row++) {
+                                ?>
+                                <div class="row">
+                                    <div class="col hoverDiv"><?= $_row ?></div>
+                                    <?php
+                                    for ($_place = 1; $_place <= $init_place+1; $_place++) {
                                         ?>
                                         <div class="col card hoverDiv
                                         <?php
@@ -75,7 +109,9 @@ require_once "public_header.php";
                                     <input type="text" class="form-control" name="customername" id="customername"
                                            required>
                                 </div>
-                                <input hidden name="timetable_id" value="<?= $timetable ?>">
+                                <label>
+                                    <input hidden name="timetable_id" value="<?= $timetable ?>">
+                                </label>
                                 <div class="form-group">
                                     <label for="phone" class="float-left">Номер телефона</label>
                                     <input type="text" class="form-control" name="phone" id="phone" required>
@@ -96,7 +132,7 @@ require_once "public_header.php";
                                     <label for="place" class="float-left">Место</label>
                                     <select class="form-control" name="place" id="place">
                                         <?php
-                                        for ($place = 1; $place <= $init_place; $place++) {
+                                        for ($place = 1; $place <= $init_place+1; $place++) {
                                             ?>
                                             <option value="<?= $place ?>"><?= $place ?></option>
                                             <?php
