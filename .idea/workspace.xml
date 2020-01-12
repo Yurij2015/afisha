@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/personal_area.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_order_handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_order_handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information_dropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/information_dropdown.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search_date.php" beforeDir="false" afterPath="$PROJECT_DIR$/search_date.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,13 +53,6 @@
         <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="artists: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="booking: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
@@ -69,7 +67,7 @@
         <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="news: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="cultural_institution: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -77,13 +75,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="repertoire: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="repertoire_has_artist: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -129,7 +120,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/pages/repertoire" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -160,7 +151,17 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="root:afisha@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2f951188" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@69ab7228" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:afisha@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@72020586" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:afisha@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@e13d764" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -200,7 +201,8 @@
       <workItem from="1576546122551" duration="948000" />
       <workItem from="1577261838305" duration="780000" />
       <workItem from="1578476417422" duration="1464000" />
-      <workItem from="1578738088409" duration="15528000" />
+      <workItem from="1578738088409" duration="20144000" />
+      <workItem from="1578816018638" duration="8685000" />
     </task>
     <servers />
   </component>
@@ -244,14 +246,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="758" y="322" key="NewPhpClassDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576269315089" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1576433139593">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1578811848626">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576433139593" />
-    <state x="519" y="254" key="SettingsEditor" timestamp="1578751067984">
+    <state x="794" y="443" key="NewPhpFileDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578811848626" />
+    <state x="372" y="118" key="SettingsEditor" timestamp="1578815916974">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="519" y="254" key="SettingsEditor/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578751067984" />
+    <state x="372" y="118" key="SettingsEditor/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578815916974" />
     <state x="715" y="370" key="cloudConfig.SelfSettingsDialog" timestamp="1578751027731">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -260,18 +262,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="825" y="410" width="324" height="262" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576260488907" />
-    <state x="751" y="342" width="418" height="362" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1576438292606">
+    <state x="751" y="342" width="418" height="350" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1578827115660">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="751" y="342" width="418" height="362" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576438292606" />
-    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578767930383">
+    <state x="751" y="342" width="418" height="350" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578827115660" />
+    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578828245645">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578767930383" />
-    <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1578476417779">
+    <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578828245645" />
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1578816572541">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="636" y="347" key="com.intellij.ide.util.TipDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578476417779" />
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578816572541" />
     <state x="607" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576444557222">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -280,9 +282,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="170" y="202" key="refactoring.ChangeSignatureDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576265349128" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1576478884238">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1578830054850">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1576478884238" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578830054850" />
   </component>
 </project>

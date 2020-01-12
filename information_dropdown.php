@@ -11,7 +11,8 @@ require_once "public_header.php";
             <div class="calendar contentafisha-center">
                 <form method="post" action="search_date.php#search_date">
                     <label>
-                        <select class="form-control form-control-sm font-weight-bold" name="search" style="background: transparent; color: white; border: none;">
+                        <select class="form-control form-control-sm font-weight-bold" name="search"
+                                style="background: transparent; color: white; border: none;">
                             <option selected value="" disabled class="font-weight-bold">Календарь</option>
                             <?php
                             $timetable = $db->connect()->query("SELECT DISTINCT date FROM timetable");
@@ -32,31 +33,43 @@ require_once "public_header.php";
                 <form method="post" id="searchrequest" action="search.php">
                     <label for="search"></label>
                     <input placeholder="Поиск по спектаклям, артистам" id="search" name="search">
-                    <button type="submit" class="fa fa-search" style="background: transparent; color: white; border: none"></button>
+                    <button type="submit" class="fa fa-search"
+                            style="background: transparent; color: white; border: none"></button>
                 </form>
             </div>
             <div class="container">
                 <div class="content">
                     <?php
-                    $idrepertoire = $_GET['idrepertoire'];
-                    $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire WHERE repertoire_idrepertoire = '{$idrepertoire}' ORDER BY id DESC ");
+                    $cultural_institution = $_GET['cultural_institution'];
+                    if ($cultural_institution == 'all') {
+                        $timetable = $db->connect()->query("SELECT * FROM repertoire JOIN timetable t on repertoire.idrepertoire = t.repertoire_idrepertoire JOIN cultural_institution ci on repertoire.cultural_institution = ci.id_cultural_institution ORDER BY idrepertoire DESC");
+                    } else {
+                        $timetable = $db->connect()->query("SELECT * FROM repertoire JOIN timetable t on repertoire.idrepertoire = t.repertoire_idrepertoire JOIN cultural_institution ci on repertoire.cultural_institution = ci.id_cultural_institution WHERE cultural_institution = '{$cultural_institution}' ORDER BY idrepertoire DESC");
+                    }
                     if ($timetable) {
                         foreach ($timetable as $row) {
                             ?>
                             <div class="row col-md-12 mb-5 mt-5">
                                 <div class="col-md-12" id="info">
                                     <img src="/admin/<?= $row['linkimg']; ?>" width="400px"
-                                         class="float-left mr-3">
+                                         class="float-left mr-3" alt="<?= $row['name']; ?>">
+                                    <p class="text-justify mb-0"><span
+                                                class="font-weight-bold">Название театра:</span> <?= $row['ci_name']; ?></p>
                                     <p class="text-justify mb-0"><span
                                                 class="font-weight-bold"> Дата:</span> <?= $row['date'] . "&nbsp;" . $row['time']; ?>
                                     </p>
                                     <p class="text-justify mb-0"><span
-                                                class="font-weight-bold">Название:</span> <?= $row['name']; ?></p>
+                                                class="font-weight-bold">Название:</span> <?= $row['name']; ?>
+                                    </p>
+                                    <p class="text-justify mb-0"><span
+                                                class="font-weight-bold">Стоимость:</span> <?= $row['cost']; ?>
+                                    </p>
                                     <p class="text-justify mb-0"><span
                                                 class="font-weight-bold">Ограничение по возрасту:</span> <?= $row['agelimitation']; ?>
                                     </p>
                                     <p class="text-justify mb-1"><span
-                                                class="font-weight-bold">Автор:</span> <?= $row['author']; ?></p>
+                                                class="font-weight-bold">Автор:</span> <?= $row['author']; ?>
+                                    </p>
                                     <p class="text-justify"><span
                                                 class="font-weight-bold">Описание: </span><?= $row['description']; ?>
                                     </p>

@@ -13,8 +13,10 @@ require_once "public_header.php";
 
                     <div class="input-group ml-5" style="margin-top: 10px;">
                         <label>
-                            <input placeholder="Календарь" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"
-                                   class="form-control form-control-sm font-weight-bold mt-0" style="width: 210px">
+                            <input placeholder="Календарь" type="text" onfocus="(this.type='date')"
+                                   onblur="(this.type='text')" id="date"
+                                   class="form-control form-control-sm font-weight-bold mt-0" style="width: 210px"
+                                   name="search">
                         </label>
                         <div class="input-group-append">
                             <button class="btn btn-outline-secondary fa fa-search mb-1" type="submit"
@@ -91,13 +93,6 @@ require_once "public_header.php";
                                         ?>
                                         <div class="col card hoverDiv
                                         <?php
-                                        require_once "DbConnect.php";
-                                        require_once "dbsettings.php";
-                                        try {
-                                            $db = new DbConnect("localhost", "afisha", "afisha", "3004917779");
-                                        } catch (PDOException $exc) {
-                                            echo $exc->getMessage();
-                                        }
                                         $res = $db->connect()->query("SELECT css_style FROM booking WHERE row = $_row AND place = $_place AND timetable_id = $timetable");
                                         foreach ($res as $row) {
                                             echo $row['css_style'];
@@ -117,6 +112,10 @@ require_once "public_header.php";
                             <hr class="mt-3 mb-3">
                             <form method="post" enctype="multipart/form-data" id="artistForm"
                                   action="add_order_handler.php">
+                                <?= Session::get('email'); ?>
+                                <label>
+                                    <input hidden name="username" value="<?= Session::get('email'); ?>">
+                                </label>
                                 <div class="form-group">
                                     <label for="customername" class="float-left">Ваше имя</label>
                                     <input type="text" class="form-control" name="customername" id="customername"

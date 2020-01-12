@@ -1,17 +1,18 @@
 <?php
-$title = "Поиск";
+$title = "Мои заказы";
 require_once "public_header.php";
 ?>
 <div class="container">
     <div class="row afisha">
         <div class="starthead bg-dark">
-            <h1 class="starthead-center">Афиша</h1>
+            <h1 class="starthead-center">Личный кабинет. Мои заказы</h1>
         </div>
         <div class="row contentafisha">
             <div class="calendar contentafisha-center">
                 <form method="post" action="search_date.php#search_date">
                     <label>
-                        <select class="form-control form-control-sm font-weight-bold" name="search" style="background: transparent; color: white; border: none;">
+                        <select class="form-control form-control-sm font-weight-bold" name="search"
+                                style="background: transparent; color: white; border: none;">
                             <option selected value="" disabled class="font-weight-bold">Календарь</option>
                             <?php
                             $timetable = $db->connect()->query("SELECT DISTINCT date FROM timetable");
@@ -27,6 +28,8 @@ require_once "public_header.php";
                     </button>
                 </form>
             </div>
+
+
             <div class="emptyplace"></div>
             <div class="search">
                 <form method="post" id="searchrequest" action="search.php">
@@ -37,36 +40,27 @@ require_once "public_header.php";
                 </form>
             </div>
             <div class="container">
-                <div class="content" id="search_date">
+                <div class="content" id="content">
                     <?php
-                    $search = $_POST['search'];
-                    $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire WHERE date='{$search}'");
-                    if ($timetable) {
-                        foreach ($timetable as $row) {
+                    $user = Session::get('email');
+                    $booking= $db->connect()->query("SELECT * FROM booking JOIN timetable t on booking.timetable_id = t.id JOIN repertoire r on t.repertoire_idrepertoire = r.idrepertoire WHERE booking.user = \"$user\" ORDER BY idbook DESC ");
+                    if ($booking) {
+                        foreach ($booking as $row) {
                             ?>
-                            <div class="row col-md-12 mb-5 mt-5">
-                                <div class="col-md-12" id="info">
-                                    <img src="/admin/<?= $row['linkimg']; ?>" width="400px"
-                                         class="float-left mr-3">
-                                    <p class="text-justify mb-0"><span
-                                                class="font-weight-bold">Название спектакля:</span> <?= $row['name']; ?>
-                                    </p>
-                                    <p class="text-justify mb-0"><span
-                                            class="font-weight-bold">Дата:</span> <?= $row['date']; ?>
-                                    </p>
-                                    <p class="text-justify mb-0"><span
-                                            class="font-weight-bold">Время:</span> <?= $row['time']; ?>
-                                    </p>
-                                    <p class="text-justify mb-0"><span
-                                                class="font-weight-bold">Ограничение по возрасту:</span> <?= $row['agelimitation']; ?>
-                                    </p>
-                                    <p class="text-justify mb-1"><span
-                                                class="font-weight-bold">Автор:</span> <?= $row['author']; ?></p>
-                                    <p class="text-justify"><span
-                                                class="font-weight-bold">Описание: </span><?= $row['description']; ?>
-                                    </p>
+                            <div class="row col-md-12">
+                                <div class="col-md-3 content-center">
+                                    <img src="/admin/<?= $row['linkimg']; ?>" width="200px" class="mb-2 mt-2" alt="<?= $row['name']; ?>">
                                 </div>
-
+                                <div class="col-md-4 content-center mt-2">
+                                    <p><?= $row['customername']; ?></p>
+                                </div>
+                                <div class="col-md-2 content-center mt-2">
+                                    <p><?= $row['date'] . "&nbsp;" . $row['time']; ?></p>
+                                </div>
+                                <div class="col-md-3 mt-2">
+                                    <a href="information.php?id=<?= $row['id']; ?>#info"
+                                       class="content-center info">Информация</a>
+                                </div>
                             </div>
                             <hr>
                             <?php

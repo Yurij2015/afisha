@@ -46,17 +46,18 @@ require_once 'Session.php';
                     } catch (PDOException $exc) {
                         echo $exc->getMessage();
                     }
-                    $repertoire = $db->connect()->query("SELECT idrepertoire, name FROM repertoire");
-                    foreach ($repertoire as $repertoireitem) {
+                    $cultural_institution = $db->connect()->query("SELECT * FROM  cultural_institution");
+                    foreach ($cultural_institution as $cultural_institution_item) {
                         ?>
                         <a class="dropdown-item"
-                           href="/information_dropdown.php?idrepertoire=<?php echo $repertoireitem['idrepertoire'] ?>#info"><?php echo $repertoireitem['name'] ?></a>
+                           href="/information_dropdown.php?cultural_institution=<?php echo $cultural_institution_item['id_cultural_institution'] ?>#info"><?php echo $cultural_institution_item['ci_name'] ?></a>
                     <?php } ?>
+                    <a class="dropdown-item" href="/information_dropdown.php?cultural_institution=all">Все театры</a>
                 </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link ml-5 pr-5" href="/news.php#news">Новости</a>
+            <li class=" nav-item">
+                    <a class="nav-link ml-5 pr-5" href="/news.php#news">Новости</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link ml-5 pr-5" href="/artists.php#artists">Артисты</a>

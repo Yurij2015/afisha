@@ -30,7 +30,7 @@ if ($_POST) {
                 if ($row['roles'] == 0) {
                     ?>
                     <script>
-                        location.href = "/index.php";
+                        location.href = "/personal_area.php";
                     </script>
                     <?php
                 }
