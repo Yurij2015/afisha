@@ -18,7 +18,7 @@ foreach ($timetable as $row) {
     if ($row['count'] == 0) {
         $db->connect()->query("INSERT INTO booking (`customername`, `phone`, `timetable_id`, `row`, `place`, `user`) VALUES ('{$customername}','{$phone}','{$timetable_id}','{$row_a}','{$place}', '{$username}')");
         $db = null;
-        header('location: index.php?msg=Записано.');
+        header('location: personal_area.php?msg=Записано.');
     } else {
         echo "занято";
         ?>

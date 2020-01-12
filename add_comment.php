@@ -49,7 +49,6 @@ require_once "public_header.php";
                 </div>
             </div>
         </div>
-
     </div>
     <footer class="row">
         <div class="col-md-12">

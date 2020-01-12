@@ -43,24 +43,30 @@ require_once "public_header.php";
                 <div class="content" id="content">
                     <?php
                     $user = Session::get('email');
-                    $booking= $db->connect()->query("SELECT * FROM booking JOIN timetable t on booking.timetable_id = t.id JOIN repertoire r on t.repertoire_idrepertoire = r.idrepertoire WHERE booking.user = \"$user\" ORDER BY idbook DESC ");
+                    $booking = $db->connect()->query("SELECT * FROM booking JOIN timetable t on booking.timetable_id = t.id JOIN repertoire r on t.repertoire_idrepertoire = r.idrepertoire JOIN cultural_institution ON r.cultural_institution = cultural_institution.id_cultural_institution  WHERE booking.user = \"$user\" ORDER BY idbook DESC ");
                     if ($booking) {
                         foreach ($booking as $row) {
                             ?>
-                            <div class="row col-md-12">
-                                <div class="col-md-3 content-center">
-                                    <img src="/admin/<?= $row['linkimg']; ?>" width="200px" class="mb-2 mt-2" alt="<?= $row['name']; ?>">
-                                </div>
-                                <div class="col-md-4 content-center mt-2">
-                                    <p><?= $row['customername']; ?></p>
-                                </div>
-                                <div class="col-md-2 content-center mt-2">
-                                    <p><?= $row['date'] . "&nbsp;" . $row['time']; ?></p>
-                                </div>
-                                <div class="col-md-3 mt-2">
-                                    <a href="information.php?id=<?= $row['id']; ?>#info"
-                                       class="content-center info">Информация</a>
-                                </div>
+                            <div class="col-md-12 mb-5 mt-5" id="info">
+                                <img src="/admin/<?= $row['linkimg']; ?>" width="200px"
+                                     class="float-left mr-3" alt="<?= $row['name']; ?>">
+                                <p class="text-justify mb-0"><span
+                                            class="font-weight-bold">Название театра:</span> <?= $row['ci_name']; ?></p>
+                                <p class="text-justify mb-0"><span
+                                            class="font-weight-bold"> Дата:</span> <?= $row['date'] . "&nbsp;" . $row['time']; ?>
+                                </p>
+                                <p class="text-justify mb-0"><span
+                                            class="font-weight-bold">Название:</span> <?= $row['name']; ?>
+                                </p>
+                                <p class="text-justify mb-0"><span
+                                            class="font-weight-bold">Стоимость:</span> <?= $row['cost']; ?>
+                                </p>
+                                <p class="text-justify mb-0"><span
+                                            class="font-weight-bold">Ограничение по возрасту:</span> <?= $row['agelimitation']; ?>
+                                </p>
+                                <p class="text-justify mb-1"><span
+                                            class="font-weight-bold">Автор:</span> <?= $row['author']; ?>
+                                </p>
                             </div>
                             <hr>
                             <?php
@@ -71,13 +77,8 @@ require_once "public_header.php";
                 </div>
             </div>
         </div>
-
     </div>
-    <footer class="row">
-        <div class="col-md-12">
-            <?= "Все права защищены " . "&copy; " . date("Y") ?>
-        </div>
-    </footer>
+    <?php require_once "footer.php"; ?>
 </div>
 </div>
 </body>

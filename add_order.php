@@ -165,11 +165,7 @@ require_once "public_header.php";
             </div>
         </div>
     </div>
-    <footer class="row">
-        <div class="col-md-12">
-            <?= "Все права защищены " . "&copy; " . date("Y") ?>
-        </div>
-    </footer>
+    <?php require_once "footer.php"; ?>
 </div>
 </div>
 </body>

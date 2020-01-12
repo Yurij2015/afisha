@@ -54,7 +54,8 @@ require_once "public_header.php";
                                     <img src="/admin/<?= $row['linkimg']; ?>" width="400px"
                                          class="float-left mr-3" alt="<?= $row['name']; ?>">
                                     <p class="text-justify mb-0"><span
-                                                class="font-weight-bold">Название театра:</span> <?= $row['ci_name']; ?></p>
+                                                class="font-weight-bold">Название театра:</span> <?= $row['ci_name']; ?>
+                                    </p>
                                     <p class="text-justify mb-0"><span
                                                 class="font-weight-bold"> Дата:</span> <?= $row['date'] . "&nbsp;" . $row['time']; ?>
                                     </p>
@@ -74,7 +75,6 @@ require_once "public_header.php";
                                                 class="font-weight-bold">Описание: </span><?= $row['description']; ?>
                                     </p>
                                 </div>
-
                             </div>
                             <hr>
                             <?php
@@ -85,13 +85,8 @@ require_once "public_header.php";
                 </div>
             </div>
         </div>
-
     </div>
-    <footer class="row">
-        <div class="col-md-12">
-            <?= "Все права защищены " . "&copy; " . date("Y") ?>
-        </div>
-    </footer>
+    <?php require_once "footer.php"; ?>
 </div>
 </div>
 </body>

@@ -11,7 +11,8 @@ require_once "public_header.php";
             <div class="calendar contentafisha-center">
                 <form method="post" action="search_date.php#search_date">
                     <label>
-                        <select class="form-control form-control-sm font-weight-bold" name="search" style="background: transparent; color: white; border: none;">
+                        <select class="form-control form-control-sm font-weight-bold" name="search"
+                                style="background: transparent; color: white; border: none;">
                             <option selected value="" disabled class="font-weight-bold">Календарь</option>
                             <?php
                             $timetable = $db->connect()->query("SELECT DISTINCT date FROM timetable");
@@ -52,10 +53,10 @@ require_once "public_header.php";
                                                 class="font-weight-bold">Название спектакля:</span> <?= $row['name']; ?>
                                     </p>
                                     <p class="text-justify mb-0"><span
-                                            class="font-weight-bold">Дата:</span> <?= $row['date']; ?>
+                                                class="font-weight-bold">Дата:</span> <?= $row['date']; ?>
                                     </p>
                                     <p class="text-justify mb-0"><span
-                                            class="font-weight-bold">Время:</span> <?= $row['time']; ?>
+                                                class="font-weight-bold">Время:</span> <?= $row['time']; ?>
                                     </p>
                                     <p class="text-justify mb-0"><span
                                                 class="font-weight-bold">Ограничение по возрасту:</span> <?= $row['agelimitation']; ?>
@@ -77,13 +78,8 @@ require_once "public_header.php";
                 </div>
             </div>
         </div>
-
     </div>
-    <footer class="row">
-        <div class="col-md-12">
-            <?= "Все права защищены " . "&copy; " . date("Y") ?>
-        </div>
-    </footer>
+    <?php require_once "footer.php"; ?>
 </div>
 </div>
 </body>

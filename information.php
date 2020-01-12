@@ -48,7 +48,8 @@ require_once "public_header.php";
                                 </div>
                             </div>
                             <hr>
-                            <a href="add_order.php?timetable=<?= $row['id'] ?>&date=<?= $row['date'] ?>&time=<?=$row['time']; ?>&name=<?=$row['name']; ?>#comments" class="btn btn-danger float-lg-right mb-3 mt-2 mr-2">
+                            <a href="add_order.php?timetable=<?= $row['id'] ?>&date=<?= $row['date'] ?>&time=<?= $row['time']; ?>&name=<?= $row['name']; ?>#comments"
+                               class="btn btn-danger float-lg-right mb-3 mt-2 mr-2">
                                 Забронировать
                             </a>
                             <?php
@@ -62,11 +63,7 @@ require_once "public_header.php";
         </div>
 
     </div>
-    <footer class="row">
-        <div class="col-md-12">
-            <?= "Все права защищены " . "&copy; " . date("Y") ?>
-        </div>
-    </footer>
+    <?php require_once "footer.php"; ?>
 </div>
 </div>
 </body>

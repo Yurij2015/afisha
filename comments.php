@@ -11,7 +11,8 @@ require_once "public_header.php";
             <div class="calendar contentafisha-center">
                 <form method="post" action="search_date.php#search_date">
                     <label>
-                        <select class="form-control form-control-sm font-weight-bold" name="search" style="background: transparent; color: white; border: none;">
+                        <select class="form-control form-control-sm font-weight-bold" name="search"
+                                style="background: transparent; color: white; border: none;">
                             <option selected value="" disabled class="font-weight-bold">Календарь</option>
                             <?php
                             $timetable = $db->connect()->query("SELECT DISTINCT date FROM timetable");
@@ -67,11 +68,7 @@ require_once "public_header.php";
         </div>
 
     </div>
-    <footer class="row">
-        <div class="col-md-12">
-            <?= "Все права защищены " . "&copy; " . date("Y") ?>
-        </div>
-    </footer>
+    <?php require_once "footer.php"; ?>
 </div>
 </div>
 </body>

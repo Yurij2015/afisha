@@ -21,19 +21,18 @@ if ($_POST) {
         $username = $form->getUserName();
         $usersecondname = $form->getUserSecondName();
         $password = new Password($form->getPassword());
-
         $res = $db->connect()->query("SELECT * FROM users WHERE email = '{$email}'");
-        if (empty($res)) {
+        if ($res->rowCount() > 0) {
             $msg = 'Пользователь с таким эл. адресом уже существует!';
-        } else {
+        }
+        if ($res->rowCount() == 0) {
             $db->connect()->query("INSERT INTO `users` (email, username, usersecondname, password) VALUES ('{$email}','{$username}', '{$usersecondname}','{$password}')");
 //            header('location: auth.php?msg=Регистрация прошла успешно!');
             ?>
             <script>
-                location.href = "/auth.php";
+                location.href = "/auth/auth.php";
             </script>
             <?php
-
         }
     } else {
         $msg = $form->passwordsMatch() ? 'Пожалуйста, заполните все поля' : 'Пароли не совпадают';
