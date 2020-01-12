@@ -74,6 +74,8 @@ require_once "public_header.php";
                                     <p class="text-justify"><span
                                                 class="font-weight-bold">Описание: </span><?= $row['description']; ?>
                                     </p>
+                                    <a href="information.php?id=<?= $row['id']; ?>#info"
+                                       class="btn btn-danger float-right">Информация</a>
                                 </div>
                             </div>
                             <hr>

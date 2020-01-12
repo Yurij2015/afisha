@@ -12,7 +12,7 @@ require_once "../../header.php";
                 <a href="add_repertoire.php" class="btn btn-primary float-lg-right mb-3">
                     Добавить запись
                 </a>
-                <a href="addrelertoire.php" class="btn btn-primary float-lg-right mb-3 mr-3">
+                <a href="../repertoireofartist/repertoireofartist_view.php" class="btn btn-primary float-lg-right mb-3 mr-3">
                     Репертуар артиста
                 </a>
                 <?php

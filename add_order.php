@@ -10,7 +10,6 @@ require_once "public_header.php";
         <div class="row contentafisha">
             <div class="calendar contentafisha-center">
                 <form method="post" action="search_date.php#search_date">
-
                     <div class="input-group ml-5" style="margin-top: 10px;">
                         <label>
                             <input placeholder="Календарь" type="text" onfocus="(this.type='date')"

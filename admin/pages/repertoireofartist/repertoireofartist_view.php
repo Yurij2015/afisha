@@ -14,7 +14,7 @@ require_once "../../header.php";
                 <?php
                 require_once "../../../DbConnect.php";
                 require_once "../../../dbsettings.php";
-                require_once "Timetable.php";
+//                require_once "Timetable.php";
 
                 try {
                     $db = new DbConnect($host, $user, $db, $pass);
@@ -27,17 +27,17 @@ require_once "../../header.php";
                     <tr>
                         <th>Артист</th>
                         <th>Репертуар</th>
-                        <th></th>
+<!--                        <th></th>-->
                     </tr>
                     <?php
-                    $repertoire_has_artist = $db->connect()->query("SELECT * FROM repertoire_has_artist ORDER BY artist_idartist DESC ");
+                    $repertoire_has_artist = $db->connect()->query("SELECT a.name as aname, r.name as rname, r.author as rauthor, r.description as rdescription FROM repertoire_has_artist JOIN repertoire r on repertoire_has_artist.repertoire_idrepertoire = r.idrepertoire JOIN artists a on repertoire_has_artist.artist_idartist = a.idartist ORDER BY artist_idartist DESC ");
                     if ($repertoire_has_artist) {
                         foreach ($repertoire_has_artist as $row) {
                             ?>
                             <tr>
-                                <td><?= $row['repertoire_idrepertoire']; ?></td>
-                                <td><?= $row['artist_idartist']; ?></td>
-                                <td><?= '<a href="' . $row['id'] . '" class="small">Редактировать</a>' ?></td>
+                                <td><?= $row['aname']; ?></td>
+                                <td><?= $row['rname'] . ". Автор: " . $row['rauthor'] . ". Описание: " . $row['rdescription']; ?></td>
+<!--                                <td>--><?//= '<a href="' . $row['id'] . '" class="small">Редактировать</a>' ?><!--</td>-->
                             </tr>
                             <?php
                         }

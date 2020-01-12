@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_order_handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_order_handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth/reg.php" beforeDir="false" afterPath="$PROJECT_DIR$/auth/reg.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/repertoireofartist/repertoireofartist_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/repertoireofartist/repertoireofartist_view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/information_dropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/information_dropdown.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/personal_area.php" beforeDir="false" afterPath="$PROJECT_DIR$/personal_area.php" afterDir="false" />
     </list>
@@ -54,6 +52,13 @@
         <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="artists: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="booking: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
@@ -76,6 +81,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="repertoire: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="afisha@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="afisha: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="repertoire_has_artist: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -188,7 +200,7 @@
       <workItem from="1577261838305" duration="780000" />
       <workItem from="1578476417422" duration="1464000" />
       <workItem from="1578738088409" duration="20144000" />
-      <workItem from="1578816018638" duration="17018000" />
+      <workItem from="1578816018638" duration="19696000" />
     </task>
     <servers />
   </component>
