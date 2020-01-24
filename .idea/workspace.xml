@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/pages/artists/delete_artist.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/repertoireofartist/add_rep_of_art.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/repertoireofartist/add_rep_of_art_handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/pages/repertoireofartist/delete_rep_or_art.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/artists/getartist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/artists/getartist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/repertoire/repertoire_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/repertoireofartist/repertoireofartist_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/repertoireofartist/repertoireofartist_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/uploads/repertoire/News3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/admin/uploads/News3.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -222,7 +212,7 @@
       <workItem from="1579787416686" duration="1213000" />
       <workItem from="1579829310491" duration="4707000" />
       <workItem from="1579881847363" duration="3325000" />
-      <workItem from="1579886123439" duration="12626000" />
+      <workItem from="1579886123439" duration="12892000" />
     </task>
     <servers />
   </component>
