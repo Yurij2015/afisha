@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e73f1c45-af86-4cf7-bf9b-843e0758aeb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/search_artists.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/information_dropdown.php" beforeDir="false" afterPath="$PROJECT_DIR$/information_dropdown.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search_date.php" beforeDir="false" afterPath="$PROJECT_DIR$/search_date.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/add_comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artists.php" beforeDir="false" afterPath="$PROJECT_DIR$/artists.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,19 +133,19 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\booking" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
-      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\repertoire" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\news" />
       <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\timetable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\booking" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha\admin\pages\artists" />
+      <recent name="E:\OSPanel09_19\OSPanel\domains\afisha" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -212,7 +209,8 @@
       <workItem from="1579321580706" duration="3591000" />
       <workItem from="1579787416686" duration="1213000" />
       <workItem from="1579829310491" duration="4707000" />
-      <workItem from="1579881847363" duration="865000" />
+      <workItem from="1579881847363" duration="3325000" />
+      <workItem from="1579886123439" duration="1464000" />
     </task>
     <servers />
   </component>
@@ -304,10 +302,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="676" y="161" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1578981855952" />
-    <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1579881855915">
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1579886140096">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="636" y="347" key="com.intellij.ide.util.TipDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1579881855915" />
+    <state x="636" y="347" key="com.intellij.ide.util.TipDialog/1920.224.1366.738/0.0.1920.1050@0.0.1920.1050" timestamp="1579886140096" />
     <state x="607" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576444557222">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

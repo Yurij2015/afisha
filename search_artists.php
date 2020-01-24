@@ -45,7 +45,10 @@ require_once "public_header.php";
                 </div>
                 <div class="content" id="artists">
                     <?php
-                    $artists = $db->connect()->query("SELECT * FROM artists ORDER BY idartist DESC ");
+                    if ($_POST) {
+                        $search_artist = trim(htmlspecialchars($_POST['search_artist']));
+                    }
+                    $artists = $db->connect()->query("SELECT * FROM artists WHERE artists.name LIKE '%$search_artist%'");
                     if ($artists) {
                         foreach ($artists as $row) {
                             ?>
