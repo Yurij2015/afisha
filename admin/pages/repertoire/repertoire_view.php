@@ -12,7 +12,8 @@ require_once "../../header.php";
                 <a href="add_repertoire.php" class="btn btn-primary float-lg-right mb-3">
                     Добавить запись
                 </a>
-                <a href="../repertoireofartist/repertoireofartist_view.php" class="btn btn-primary float-lg-right mb-3 mr-3">
+                <a href="../repertoireofartist/repertoireofartist_view.php"
+                   class="btn btn-primary float-lg-right mb-3 mr-3">
                     Репертуар артиста
                 </a>
                 <?php
@@ -31,6 +32,7 @@ require_once "../../header.php";
                     <tr>
                         <th>Название спектакля</th>
                         <th>Автор</th>
+                        <th>Артисты</th>
                         <th class="col-md-4">Описание</th>
                         <th>Изображение</th>
                         <th>Возврастное ограничение</th>
@@ -45,8 +47,15 @@ require_once "../../header.php";
                             <tr>
                                 <td><?= $news->name(); ?></td>
                                 <td><?= $news->author(); ?></td>
+                                <td>
+                                    <?php
+                                    $repertoire = $db->connect()->query("SELECT name FROM artists JOIN repertoire_has_artist rha on artists.idartist = rha.artist_idartist WHERE repertoire_idrepertoire={$row['idrepertoire']}");
+                                    foreach ($repertoire as $repertoireitem) {
+                                        echo $repertoireitem['name'] . "<br>";
+                                    } ?>
+                                </td>
                                 <td><?= $news->description(); ?></td>
-                                <td><img src="/admin/<?= $row['linkimg']; ?>" width="300px"></td>
+                                <td><img src="/admin/<?= $row['linkimg']; ?>" width="200px"></td>
 
                                 <td><?= $news->agelimitation(); ?></td>
 
@@ -60,10 +69,8 @@ require_once "../../header.php";
                     }
                     $db = null;
                     ?>
-
                     </tbody>
                 </table>
-
             </div>
         </div>
     </div>

@@ -8,13 +8,13 @@ require_once "../../header.php";
         ?>
         <div class="row">
             <div class="col-md-12">
-                <div class="btn btn-primary float-lg-right mb-3">
+                <a href="add_rep_of_art.php" class="btn btn-primary float-lg-right mb-3">
                     Добавить запись
-                </div>
+                </a>
                 <?php
                 require_once "../../../DbConnect.php";
                 require_once "../../../dbsettings.php";
-//                require_once "Timetable.php";
+                //                require_once "Timetable.php";
 
                 try {
                     $db = new DbConnect($host, $user, $db, $pass);
@@ -27,17 +27,17 @@ require_once "../../header.php";
                     <tr>
                         <th>Артист</th>
                         <th>Репертуар</th>
-<!--                        <th></th>-->
+                        <th></th>
                     </tr>
                     <?php
-                    $repertoire_has_artist = $db->connect()->query("SELECT a.name as aname, r.name as rname, r.author as rauthor, r.description as rdescription FROM repertoire_has_artist JOIN repertoire r on repertoire_has_artist.repertoire_idrepertoire = r.idrepertoire JOIN artists a on repertoire_has_artist.artist_idartist = a.idartist ORDER BY artist_idartist DESC ");
+                    $repertoire_has_artist = $db->connect()->query("SELECT a.idartist as aid, a.name as aname, r.idrepertoire as rid, r.name as rname, r.author as rauthor, r.description as rdescription FROM repertoire_has_artist JOIN repertoire r on repertoire_has_artist.repertoire_idrepertoire = r.idrepertoire JOIN artists a on repertoire_has_artist.artist_idartist = a.idartist ORDER BY artist_idartist DESC ");
                     if ($repertoire_has_artist) {
                         foreach ($repertoire_has_artist as $row) {
                             ?>
                             <tr>
                                 <td><?= $row['aname']; ?></td>
-                                <td><?= $row['rname'] . ". Автор: " . $row['rauthor'] . ". Описание: " . $row['rdescription']; ?></td>
-<!--                                <td>--><?//= '<a href="' . $row['id'] . '" class="small">Редактировать</a>' ?><!--</td>-->
+                                <td><?= $row['rname']; ?></td>
+                                <td><?= '<a href="delete_rep_or_art.php?aid=' . $row['aid'] . '&rid=' . $row['rid'] . '" class="small">Удалить</a>' ?></td>
                             </tr>
                             <?php
                         }
