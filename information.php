@@ -8,9 +8,21 @@ require_once "public_header.php";
             <h1 class="starthead-center">Афиша</h1>
         </div>
         <div class="row contentafisha">
-            <div class="calendar contentafisha-center"><i class="fa fa-calendar"></i>
-                Календарь
-            </div>
+            <div class="calendar contentafisha-center">
+                <form method="post" action="search_date.php#search_date">
+                    <div class="input-group ml-5" style="margin-top: 10px;">
+                        <label>
+                            <input placeholder="Календарь" type="text" onfocus="(this.type='date')"
+                                   onblur="(this.type='text')" id="date"
+                                   class="form-control form-control-sm font-weight-bold mt-0" style="width: 210px"
+                                   name="search">
+                        </label>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary fa fa-search mb-1" type="submit"
+                                    style="background: transparent; color: white; border: none;"></button>
+                        </div>
+                    </div>
+                </form>            </div>
             <div class="emptyplace"></div>
             <div class="search">
                 <form method="post" id="searchrequest" action="search.php">

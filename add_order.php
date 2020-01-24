@@ -21,7 +21,6 @@ require_once "public_header.php";
                             <button class="btn btn-outline-secondary fa fa-search mb-1" type="submit"
                                     style="background: transparent; color: white; border: none;"></button>
                         </div>
-
                     </div>
                 </form>
             </div>

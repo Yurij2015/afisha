@@ -10,24 +10,19 @@ require_once "public_header.php";
         <div class="row contentafisha">
             <div class="calendar contentafisha-center">
                 <form method="post" action="search_date.php#search_date">
-                    <label>
-                        <select class="form-control form-control-sm font-weight-bold" name="search"
-                                style="background: transparent; color: white; border: none;">
-                            <option selected value="" disabled class="font-weight-bold">Календарь</option>
-                            <?php
-                            $timetable = $db->connect()->query("SELECT DISTINCT date FROM timetable");
-                            foreach ($timetable as $timetabledate) {
-                                ?>
-                                <option value="<?php echo $timetabledate['date'] ?>"><?php echo $timetabledate['date'] ?></option>
-                            <?php } ?>
-                            ?>
-                        </select>
-                    </label>
-                    <button type="submit" class="fa fa-search"
-                            style="background: transparent; color: white; border: none">
-                    </button>
-                </form>
-            </div>
+                    <div class="input-group ml-5" style="margin-top: 10px;">
+                        <label>
+                            <input placeholder="Календарь" type="text" onfocus="(this.type='date')"
+                                   onblur="(this.type='text')" id="date"
+                                   class="form-control form-control-sm font-weight-bold mt-0" style="width: 210px"
+                                   name="search">
+                        </label>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary fa fa-search mb-1" type="submit"
+                                    style="background: transparent; color: white; border: none;"></button>
+                        </div>
+                    </div>
+                </form>            </div>
             <div class="emptyplace"></div>
             <div class="search">
                 <form method="post" id="searchrequest" action="search.php">
