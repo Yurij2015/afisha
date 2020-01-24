@@ -12,6 +12,7 @@ if (!empty($name) && !empty($description)) {
     } catch (PDOException $exc) {
         echo $exc->getMessage();
     }
+    $target_file_for_db = "uploads/repertoire/" . basename($_FILES["fileToUpload"]["name"]);
     $target_dir = "../../uploads/repertoire/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
@@ -44,12 +45,13 @@ if (!empty($name) && !empty($description)) {
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], iconv('utf-8', 'windows-1251', $target_file))) {
             $fileuploaded = "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
+            $artists = $db->connect()->query("INSERT INTO repertoire (`name`, `author`, `description`, `linkimg`, `agelimitation`) VALUES ('{$name}','{$author}','{$description}', '{$target_file_for_db}', '{$agelimitation}')");
             header(('location: repertoire_view.php?msg=') . $fileuploaded);
         } else {
             header('location: repertoire_view.php?msg=Sorry, there was an error uploading your file.');
         }
     }
-    $artists = $db->connect()->query("INSERT INTO repertoire (`name`, `author`, `description`, `linkimg`, `agelimitation`) VALUES ('{$name}','{$author}','{$description}', '{$target_file}', '{$agelimitation}')");
+//    $artists = $db->connect()->query("INSERT INTO repertoire (`name`, `author`, `description`, `linkimg`, `agelimitation`) VALUES ('{$name}','{$author}','{$description}', '{$target_file_for_db}', '{$agelimitation}')");
     $db = null;
 } else {
     echo 'Empty';

@@ -1,4 +1,4 @@
-<?php $title = "Новости" ?>
+<?php $title = "Добавить спектакль" ?>
 <?php
 require_once "../../header.php";
 ?>
@@ -15,7 +15,7 @@ require_once "../../header.php";
                     </div>
                     <div class="form-group">
                         <label for="name">Автор</label>
-                        <input type="text" class="form-control" name="name" id="name" required>
+                        <input type="text" class="form-control" name="author" id="name" required>
                     </div>
                     <div class="form-group">
                         <label for="description">Описание</label>
