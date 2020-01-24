@@ -41,7 +41,8 @@ require_once "../../header.php";
                                 <td><?= $booking->timetable($row['timetable_id']); ?></td>
                                 <td><?= $booking->row; ?></td>
                                 <td><?= $booking->place; ?></td>
-                                <td><?= '<a href="' . $row['idbook'] . '" class="small">Отменить</a>' ?></td>
+                                <td><?= '<a href="delete_booking.php?idbook=' . $row['idbook'] . '" class="small">Отменить</a>' ?></td>
+
                             </tr>
                             <?php
                         }

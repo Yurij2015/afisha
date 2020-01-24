@@ -9,6 +9,7 @@ if (!empty($name) && !empty($description)) {
     } catch (PDOException $exc) {
         echo $exc->getMessage();
     }
+    $target_file_for_db = "uploads/news/" . basename($_FILES["fileToUpload"]["name"]);
     $target_dir = "../../uploads/news/";
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
@@ -29,7 +30,7 @@ if (!empty($name) && !empty($description)) {
     }
     if ($_FILES["fileToUpload"]["size"] > 500000) {
         $uploadOk = 0;
-        header('location: news_veiw.php?msg=Sorry, your file is too large.');
+        header('location: news_view.php?msg=Sorry, your file is too large.');
     }
     if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
         && $imageFileType != "gif") {
@@ -41,12 +42,13 @@ if (!empty($name) && !empty($description)) {
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], iconv('utf-8', 'windows-1251', $target_file))) {
             $fileuploaded = "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
+            $artists = $db->connect()->query("INSERT INTO news (`name`, `description`, `linkimg`) VALUES ('{$name}','{$description}', '{$target_file_for_db}')");
             header(('location: news_view.php?msg=') . $fileuploaded);
         } else {
-            header('location: news_veiw.php?msg=Sorry, there was an error uploading your file.');
+            header('location: news_view.php?msg=Sorry, there was an error uploading your file.');
         }
     }
-    $artists = $db->connect()->query("INSERT INTO news (`name`, `description`, `linkimg`) VALUES ('{$name}','{$description}', '{$target_file}')");
+//    $artists = $db->connect()->query("INSERT INTO news (`name`, `description`, `linkimg`) VALUES ('{$name}','{$description}', '{$target_file}')");
     $db = null;
 } else {
     echo 'Empty';

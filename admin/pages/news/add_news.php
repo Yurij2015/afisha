@@ -19,7 +19,7 @@ require_once "../../header.php";
                     </div>
                     <div class="form-group">
                         <label for="email">Загрузить изображение</label>
-                        <input type="file" class="form-control" name="fileToUpload" id="fileToUpload">
+                        <input type="file" class="form-control" name="fileToUpload" id="fileToUpload" required>
                     </div>
                     <input type="submit" class="btn btn-success" value="Сохранить">
                     <button type="reset" class="btn btn-success">
