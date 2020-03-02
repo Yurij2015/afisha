@@ -35,8 +35,15 @@ require_once "public_header.php";
             <div class="container">
                 <div class="content">
                     <?php
-                    $id = $_GET['id'];
-                    $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire WHERE id = '{$id}' ORDER BY id DESC ");
+                    if (isset($_GET['idrepertoire'])) {
+                        $id = $_GET['idrepertoire'];
+                        $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire WHERE repertoire_idrepertoire = '{$id}' ");
+                    }
+                    else {
+                        $id = $_GET['id'];
+                        $timetable = $db->connect()->query("SELECT * FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire WHERE id = '{$id}' ORDER BY id DESC ");
+                    }
+
                     if ($timetable) {
                         foreach ($timetable as $row) {
                             ?>
@@ -54,6 +61,15 @@ require_once "public_header.php";
                                     </p>
                                     <p class="text-justify mb-1"><span
                                                 class="font-weight-bold">Автор:</span> <?= $row['author']; ?></p>
+                                    <p class="text-justify mb-0">
+                                        <span class="font-weight-bold">Артист(ы):</span>
+                                        <?php
+                                        $repertoire = $db->connect()->query("SELECT idartist, name FROM artists JOIN repertoire_has_artist rha on artists.idartist = rha.artist_idartist WHERE repertoire_idrepertoire={$row['idrepertoire']}");
+                                        foreach ($repertoire as $repertoireitem) {
+                                            $id = $repertoireitem['idartist'];
+                                            echo "<a href='artists.php?idartist=$id' style='color: red'>" . $repertoireitem['name'] . "</a> ";
+                                        } ?>
+                                    </p>
                                     <p class="text-justify"><span
                                                 class="font-weight-bold">Описание: </span><?= $row['description']; ?>
                                     </p>

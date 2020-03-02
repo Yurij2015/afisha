@@ -38,14 +38,20 @@ require_once "public_header.php";
                     <form class="form-inline float-right" method="post" action="search_artists.php#artists">
                         <div class="form-group mx-sm-3 mb-2">
                             <label for="search_artist" class="sr-only">Фамилия артиста</label>
-                            <input type="text" class="form-control" name="search_artist" id="search_artist" placeholder="Поиск...">
+                            <input type="text" class="form-control" name="search_artist" id="search_artist"
+                                   placeholder="Поиск...">
                         </div>
                         <button type="submit" class="btn btn-danger mb-2">Найти артиста</button>
                     </form>
                 </div>
                 <div class="content" id="artists">
                     <?php
-                    $artists = $db->connect()->query("SELECT * FROM artists ORDER BY idartist DESC ");
+                    if (isset($_GET['idartist'])) {
+                        $idartist = $_GET['idartist'];
+                        $artists = $db->connect()->query("SELECT * FROM artists WHERE idartist = $idartist  ORDER BY idartist DESC ");
+                    } else {
+                        $artists = $db->connect()->query("SELECT * FROM artists ORDER BY idartist DESC ");
+                    }
                     if ($artists) {
                         foreach ($artists as $row) {
                             ?>
@@ -57,6 +63,18 @@ require_once "public_header.php";
                                                 class="font-weight-bold">ФИО артиста:</span> <?= $row['name']; ?></p>
                                     <p class="text-justify"><span
                                                 class="font-weight-bold">Информация: </span><?= $row['description']; ?>
+                                    </p>
+                                    <p class="text-justify"><span
+                                                class="font-weight-bold">Спектакли: </span>
+                                        <?php
+                                        $repertoire = $db->connect()->query("SELECT idrepertoire, repertoire.name as rname FROM repertoire JOIN repertoire_has_artist rha on repertoire.idrepertoire = rha.repertoire_idrepertoire WHERE artist_idartist={$row['idartist']}");
+                                        foreach ($repertoire as $repertoireitem) {
+                                            $idrepertoire = $repertoireitem['idrepertoire'];
+//                                            echo $repertoireitem['rname'] . " ";
+                                            echo "<a href='information.php?idrepertoire=$idrepertoire' style='color: red'>" . $repertoireitem['rname'] . "</a> ";
+
+                                        }
+                                        ?>
                                     </p>
                                 </div>
                             </div>
