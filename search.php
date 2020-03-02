@@ -38,7 +38,8 @@ require_once "public_header.php";
                     <?php
                     $search = $_POST['search'];
                     //                    $timetable = $db->connect()->query("SELECT DISTINCT idartist, repertoire.name AS reportoirename,repertoire.author,repertoire.description AS repertoiredescription,linkimg, agelimitation, artists.name AS artistname,artists.description AS artistdescription FROM repertoire,repertoire_has_artist,artists WHERE repertoire.name LIKE '%$search%' OR repertoire.idrepertoire = (SELECT repertoire_idrepertoire FROM repertoire_has_artist WHERE artist_idartist = (SELECT idartist FROM artists WHERE artists.name LIKE '%$search%') AND repertoire_has_artist.repertoire_idrepertoire = repertoire.idrepertoire AND repertoire_has_artist.artist_idartist = artists.idartist) AND repertoire_has_artist.repertoire_idrepertoire = repertoire.idrepertoire AND repertoire_has_artist.artist_idartist = artists.idartist");
-                    $timetable = $db->connect()->query("SELECT id, date, time, idartist, repertoire.name AS reportoirename,repertoire.author,repertoire.description AS repertoiredescription,linkimg, agelimitation, a.name AS artistname,a.description AS artistdescription FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire JOIN repertoire_has_artist rha on repertoire.idrepertoire = rha.repertoire_idrepertoire JOIN artists a on rha.artist_idartist = a.idartist WHERE repertoire.name LIKE '%$search%' OR a.name LIKE '%$search%' ");
+//                    $timetable = $db->connect()->query("SELECT id, date, time, idartist, repertoire.name AS reportoirename,repertoire.author,repertoire.description AS repertoiredescription,linkimg, agelimitation, a.name AS artistname,a.description AS artistdescription FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire JOIN repertoire_has_artist rha on repertoire.idrepertoire = rha.repertoire_idrepertoire JOIN artists a on rha.artist_idartist = a.idartist WHERE repertoire.name LIKE '%$search%' OR a.name LIKE '%$search%' ");
+                    $timetable = $db->connect()->query("SELECT id, date, time, idartist, repertoire.name AS reportoirename,repertoire.author,repertoire.description AS repertoiredescription,linkimg, agelimitation, a.name AS artistname,a.description AS artistdescription FROM timetable JOIN repertoire ON timetable.repertoire_idrepertoire = repertoire.idrepertoire JOIN repertoire_has_artist rha on repertoire.idrepertoire = rha.repertoire_idrepertoire JOIN artists a on rha.artist_idartist = a.idartist WHERE repertoire.name LIKE '%$search%' OR a.name LIKE '%$search%' GROUP BY repertoire.name, date, time ");
                     if ($timetable) {
                         foreach ($timetable as $row) {
                             ?>
@@ -57,10 +58,10 @@ require_once "public_header.php";
                                     <p class="text-justify mb-0">
                                         <span class="font-weight-bold">Автор:</span>
                                         <?= $row['author']; ?></p>
-                                    <p class="text-justify  mb-0">
-                                        <span class="font-weight-bold ">Описание: </span>
-                                        <?= $row['repertoiredescription']; ?>
-                                    </p>
+<!--                                    <p class="text-justify  mb-0">-->
+<!--                                        <span class="font-weight-bold ">Описание: </span>-->
+<!--                                        --><?//= $row['repertoiredescription']; ?>
+<!--                                    </p>-->
                                     <p class="text-justify  mb-0">
                                         <span class="font-weight-bold">Дата: </span>
                                         <?= $row['date'] . " " . $row['time']; ?>
@@ -68,10 +69,10 @@ require_once "public_header.php";
                                     <p class="text-justify mb-0">
                                         <span class="font-weight-bold">Артист:</span>
                                         <?= $row['artistname']; ?></p>
-                                    <p class="text-justify mb-0">
-                                        <span class="font-weight-bold">Об артисте:</span>
-                                        <?= $row['artistdescription']; ?>
-                                    </p>
+<!--                                    <p class="text-justify mb-0">-->
+<!--                                        <span class="font-weight-bold">Об артисте:</span>-->
+<!--                                        --><?//= $row['artistdescription']; ?>
+<!--                                    </p>-->
                                     <a href="information.php?id=<?= $row['id']; ?>#info"
                                        class="btn btn-danger float-right">Информация</a>
                                 </div>
